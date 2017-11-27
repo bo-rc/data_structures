@@ -1,0 +1,8 @@
+Grading revision r4652 by boliu1, dated 2015-07-10 22:14:30.00031439 -0500 CDT
+Monad Autograder
+Testing mp_parse.2 at 2015-07-11 12:21:12
+
+"And I'm sitting there hallucinating a bird on my pillow from the benadryl and I think to myself ... 'I need to write a poem about Makefiles'." ~ Lisa Sproat
+
+Setting up test environment...
+Error: /dev/shm/cs225student/autograder/temp/mp_parse/include/divide.h does not exist.

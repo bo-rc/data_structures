@@ -1,0 +1,202 @@
+Grading revision r4907 by geigle1, dated 2015-07-11 23:50:57.000949867 -0500 CDT
+Monad Autograder
+Testing mp_parse at 2015-07-12 23:14:24
+
+"The slogan of Subversion for a while was "CVS done right", or something like that, and if you start with that kind of slogan, there's nowhere you can go. There is no way to do CVS right." ~ Linus Torvalds
+
+Setting up test environment...
+Compiling...
+================================================================
+In file included from src/lex.cpp:8:
+In file included from include/lex.h:11:
+In file included from include/queue.h:10:
+In file included from include/circ_array.h:173:
+include/circ_array.tcc:108:16: error: call to implicitly-deleted copy constructor of 'std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >'
+    add(size_, elem);
+               ^~~~
+include/queue.tcc:33:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::push_back' requested here
+    arr_.push_back(std::move(elem));
+         ^
+src/lex.cpp:32:16: note: in instantiation of member function 'cs225::queue<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::push' requested here
+        tokens.push(std::move(tok));
+               ^
+/class/cs225/lm35/bin/../include/c++/v1/memory:2515:31: note: copy constructor is implicitly deleted because 'unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' has a user-declared move constructor
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(unique_ptr&& __u) _NOEXCEPT
+                              ^
+include/circ_array.h:168:25: note: passing argument to parameter 'elem' here
+    void add(int idx, T elem);
+                        ^
+In file included from src/lex.cpp:8:
+In file included from include/lex.h:11:
+In file included from include/queue.h:10:
+In file included from include/circ_array.h:173:
+include/circ_array.tcc:170:26: error: object of type 'std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' cannot be assigned because its copy assignment operator is implicitly deleted
+            arr_[pos(i)] = arr_[pos(i+1)];
+                         ^
+include/circ_array.tcc:108:5: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::add' requested here
+    add(size_, elem);
+    ^
+include/queue.tcc:33:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::push_back' requested here
+    arr_.push_back(std::move(elem));
+         ^
+src/lex.cpp:32:16: note: in instantiation of member function 'cs225::queue<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::push' requested here
+        tokens.push(std::move(tok));
+               ^
+/class/cs225/lm35/bin/../include/c++/v1/memory:2515:31: note: copy assignment operator is implicitly deleted because 'unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' has a user-declared move constructor
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(unique_ptr&& __u) _NOEXCEPT
+                              ^
+In file included from src/lex.cpp:8:
+In file included from include/lex.h:11:
+In file included from include/queue.h:10:
+In file included from include/circ_array.h:173:
+include/circ_array.tcc:181:20: error: object of type 'std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' cannot be assigned because its copy assignment operator is implicitly deleted
+    arr_[pos(idx)] = elem;
+                   ^
+/class/cs225/lm35/bin/../include/c++/v1/memory:2515:31: note: copy assignment operator is implicitly deleted because 'unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' has a user-declared move constructor
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(unique_ptr&& __u) _NOEXCEPT
+                              ^
+In file included from src/lex.cpp:8:
+In file included from include/lex.h:11:
+In file included from include/queue.h:10:
+In file included from include/circ_array.h:173:
+include/circ_array.tcc:150:17: error: object of type 'std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' cannot be assigned because its copy assignment operator is implicitly deleted
+        arr_[i] = circ_array_copy.operator[](i); // new idx0_ = 0
+                ^
+include/circ_array.tcc:163:9: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::resize' requested here
+        resize();
+        ^
+include/circ_array.tcc:108:5: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::add' requested here
+    add(size_, elem);
+    ^
+include/queue.tcc:33:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::push_back' requested here
+    arr_.push_back(std::move(elem));
+         ^
+src/lex.cpp:32:16: note: in instantiation of member function 'cs225::queue<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::push' requested here
+        tokens.push(std::move(tok));
+               ^
+/class/cs225/lm35/bin/../include/c++/v1/memory:2515:31: note: copy assignment operator is implicitly deleted because 'unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' has a user-declared move constructor
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(unique_ptr&& __u) _NOEXCEPT
+                              ^
+In file included from src/lex.cpp:8:
+In file included from include/lex.h:11:
+In file included from include/queue.h:10:
+In file included from include/circ_array.h:173:
+include/circ_array.tcc:40:17: error: object of type 'std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' cannot be assigned because its copy assignment operator is implicitly deleted
+        arr_[i] = other[i];
+                ^
+include/circ_array.tcc:144:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::circ_array' requested here
+    auto circ_array_copy(*this);
+         ^
+include/circ_array.tcc:163:9: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::resize' requested here
+        resize();
+        ^
+include/circ_array.tcc:108:5: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::add' requested here
+    add(size_, elem);
+    ^
+include/queue.tcc:33:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::push_back' requested here
+    arr_.push_back(std::move(elem));
+         ^
+src/lex.cpp:32:16: note: in instantiation of member function 'cs225::queue<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::push' requested here
+        tokens.push(std::move(tok));
+               ^
+/class/cs225/lm35/bin/../include/c++/v1/memory:2515:31: note: copy assignment operator is implicitly deleted because 'unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' has a user-declared move constructor
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(unique_ptr&& __u) _NOEXCEPT
+                              ^
+5 errors generated.
+make: *** [lex.o] Error 1
+make: *** Waiting for unfinished jobs....
+src/parser.cpp:58:15: warning: unused variable 'tok' [-Wunused-variable]
+        auto& tok = tokens.front();
+              ^
+src/parser.cpp:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+In file included from src/parser.cpp:8:
+In file included from include/parser.h:12:
+In file included from include/queue.h:10:
+In file included from include/circ_array.h:173:
+include/circ_array.tcc:187:7: error: call to implicitly-deleted copy constructor of 'std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >'
+    T x = arr_[pos(idx)];
+      ^   ~~~~~~~~~~~~~~
+include/circ_array.tcc:114:5: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::remove' requested here
+    remove(0);
+    ^
+include/queue.tcc:39:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::pop_front' requested here
+    arr_.pop_front();
+         ^
+src/parser.cpp:60:16: note: in instantiation of member function 'cs225::queue<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::pop' requested here
+        tokens.pop();
+               ^
+/class/cs225/lm35/bin/../include/c++/v1/memory:2515:31: note: copy constructor is implicitly deleted because 'unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' has a user-declared move constructor
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(unique_ptr&& __u) _NOEXCEPT
+                              ^
+In file included from src/parser.cpp:8:
+In file included from include/parser.h:12:
+In file included from include/queue.h:10:
+In file included from include/circ_array.h:173:
+include/circ_array.tcc:192:26: error: object of type 'std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' cannot be assigned because its copy assignment operator is implicitly deleted
+            arr_[pos(i)] = arr_[pos(i - 1)];
+                         ^
+/class/cs225/lm35/bin/../include/c++/v1/memory:2515:31: note: copy assignment operator is implicitly deleted because 'unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' has a user-declared move constructor
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(unique_ptr&& __u) _NOEXCEPT
+                              ^
+In file included from src/parser.cpp:8:
+In file included from include/parser.h:12:
+In file included from include/queue.h:10:
+In file included from include/circ_array.h:173:
+include/circ_array.tcc:150:17: error: object of type 'std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' cannot be assigned because its copy assignment operator is implicitly deleted
+        arr_[i] = circ_array_copy.operator[](i); // new idx0_ = 0
+                ^
+include/circ_array.tcc:205:9: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::resize' requested here
+        resize();
+        ^
+include/circ_array.tcc:114:5: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::remove' requested here
+    remove(0);
+    ^
+include/queue.tcc:39:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::pop_front' requested here
+    arr_.pop_front();
+         ^
+src/parser.cpp:60:16: note: in instantiation of member function 'cs225::queue<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::pop' requested here
+        tokens.pop();
+               ^
+/class/cs225/lm35/bin/../include/c++/v1/memory:2515:31: note: copy assignment operator is implicitly deleted because 'unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' has a user-declared move constructor
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(unique_ptr&& __u) _NOEXCEPT
+                              ^
+In file included from src/parser.cpp:8:
+In file included from include/parser.h:12:
+In file included from include/queue.h:10:
+In file included from include/circ_array.h:173:
+include/circ_array.tcc:40:17: error: object of type 'std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' cannot be assigned because its copy assignment operator is implicitly deleted
+        arr_[i] = other[i];
+                ^
+include/circ_array.tcc:144:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::circ_array' requested here
+    auto circ_array_copy(*this);
+         ^
+include/circ_array.tcc:205:9: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::resize' requested here
+        resize();
+        ^
+include/circ_array.tcc:114:5: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::remove' requested here
+    remove(0);
+    ^
+include/queue.tcc:39:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::pop_front' requested here
+    arr_.pop_front();
+         ^
+src/parser.cpp:60:16: note: in instantiation of member function 'cs225::queue<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::pop' requested here
+        tokens.pop();
+               ^
+/class/cs225/lm35/bin/../include/c++/v1/memory:2515:31: note: copy assignment operator is implicitly deleted because 'unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' has a user-declared move constructor
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(unique_ptr&& __u) _NOEXCEPT
+                              ^
+2 warnings and 4 errors generated.
+make: *** [parser.o] Error 1
+
+
+Running tests...
+================================================================
+Could not execute test cases
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

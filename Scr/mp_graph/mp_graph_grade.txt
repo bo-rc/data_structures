@@ -1,0 +1,260 @@
+Grading revision r7836 by geigle1, dated 2015-08-03 23:34:46.000199051 -0500 CDT
+Monad Autograder
+Testing mp_graph at 2015-08-04 23:17:54
+
+"It's like comparing a small apple with a medium-sized apple." ~ Jason Cho
+
+Setting up test environment...
+Compiling...
+================================================================
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:22:10: warning: unused variable 'min_edge' [-Wunused-variable]
+    edge min_edge{g.start_vertex(), g.start_vertex()};
+         ^
+include/tools.tcc:32:38: warning: unused parameter 'g' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                     ^
+include/tools.tcc:32:48: warning: unused parameter 'start' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                               ^
+include/tools.tcc:32:62: warning: unused parameter 'end' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                                             ^
+include/tools.tcc:21:14: warning: unused variable 'min' [-Wunused-variable]
+    weight_t min = std::numeric_limits<weight_t>::max();
+             ^
+unit_tests.cpp:294:19: note: in instantiation of function template specialization 'cs225::tools::min_weight_edge<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    ASSERT(tools::min_weight_edge(g) == 12);
+                  ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:29:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:294:19: note: in instantiation of function template specialization 'cs225::tools::min_weight_edge<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    ASSERT(tools::min_weight_edge(g) == 12);
+                  ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:360:19: note: in instantiation of function template specialization 'cs225::tools::shortest_path_length<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state> > >' requested here
+    ASSERT(tools::shortest_path_length(g, v1, v2) == 1);
+                  ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+include/tools.tcc:40:26: note: in instantiation of function template specialization 'cs225::tools::minimum_spanning_tree<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    for (const auto& e : minimum_spanning_tree(g))
+                         ^
+unit_tests.cpp:434:12: note: in instantiation of function template specialization 'cs225::tools::mark_mst<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    tools::mark_mst(g);
+           ^
+8 warnings generated.
+In file included from src/maze.cpp:11:
+In file included from include/tools.h:126:
+include/tools.tcc:22:10: warning: unused variable 'min_edge' [-Wunused-variable]
+    edge min_edge{g.start_vertex(), g.start_vertex()};
+         ^
+include/tools.tcc:32:38: warning: unused parameter 'g' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                     ^
+include/tools.tcc:32:48: warning: unused parameter 'start' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                               ^
+include/tools.tcc:32:62: warning: unused parameter 'end' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                                             ^
+src/maze.cpp:42:32: warning: unused parameter 'x' [-Wunused-parameter]
+bool maze::can_travel(uint64_t x, uint64_t y, direction dir) const
+                               ^
+src/maze.cpp:42:44: warning: unused parameter 'y' [-Wunused-parameter]
+bool maze::can_travel(uint64_t x, uint64_t y, direction dir) const
+                                           ^
+src/maze.cpp:42:57: warning: unused parameter 'dir' [-Wunused-parameter]
+bool maze::can_travel(uint64_t x, uint64_t y, direction dir) const
+                                                        ^
+src/maze.cpp:48:30: warning: unused parameter 'x' [-Wunused-parameter]
+void maze::set_wall(uint64_t x, uint64_t y, direction dir, bool exists)
+                             ^
+src/maze.cpp:48:42: warning: unused parameter 'y' [-Wunused-parameter]
+void maze::set_wall(uint64_t x, uint64_t y, direction dir, bool exists)
+                                         ^
+src/maze.cpp:48:55: warning: unused parameter 'dir' [-Wunused-parameter]
+void maze::set_wall(uint64_t x, uint64_t y, direction dir, bool exists)
+                                                      ^
+src/maze.cpp:48:65: warning: unused parameter 'exists' [-Wunused-parameter]
+void maze::set_wall(uint64_t x, uint64_t y, direction dir, bool exists)
+                                                                ^
+src/maze.cpp:57:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+src/maze.cpp:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+In file included from src/maze.cpp:12:
+include/maze.h:180:14: warning: private field 'width_' is not used [-Wunused-private-field]
+    uint64_t width_;
+             ^
+include/maze.h:185:14: warning: private field 'height_' is not used [-Wunused-private-field]
+    uint64_t height_;
+             ^
+15 warnings generated.
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:22:10: warning: unused variable 'min_edge' [-Wunused-variable]
+    edge min_edge{g.start_vertex(), g.start_vertex()};
+         ^
+include/tools.tcc:32:38: warning: unused parameter 'g' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                     ^
+include/tools.tcc:32:48: warning: unused parameter 'start' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                               ^
+include/tools.tcc:32:62: warning: unused parameter 'end' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                                             ^
+include/tools.tcc:21:14: warning: unused variable 'min' [-Wunused-variable]
+    weight_t min = std::numeric_limits<weight_t>::max();
+             ^
+unit_tests.cpp:294:19: note: in instantiation of function template specialization 'cs225::tools::min_weight_edge<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    ASSERT(tools::min_weight_edge(g) == 12);
+                  ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:29:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:294:19: note: in instantiation of function template specialization 'cs225::tools::min_weight_edge<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    ASSERT(tools::min_weight_edge(g) == 12);
+                  ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:360:19: note: in instantiation of function template specialization 'cs225::tools::shortest_path_length<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state> > >' requested here
+    ASSERT(tools::shortest_path_length(g, v1, v2) == 1);
+                  ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+include/tools.tcc:40:26: note: in instantiation of function template specialization 'cs225::tools::minimum_spanning_tree<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    for (const auto& e : minimum_spanning_tree(g))
+                         ^
+unit_tests.cpp:434:12: note: in instantiation of function template specialization 'cs225::tools::mark_mst<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    tools::mark_mst(g);
+           ^
+In file included from src/maze.cpp:11:
+In file included from include/tools.h:126:
+include/tools.tcc:22:10: warning: unused variable 'min_edge' [-Wunused-variable]
+    edge min_edge{g.start_vertex(), g.start_vertex()};
+         ^
+include/tools.tcc:32:38: warning: unused parameter 'g' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                     ^
+include/tools.tcc:32:48: warning: unused parameter 'start' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                               ^
+include/tools.tcc:32:62: warning: unused parameter 'end' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                                             ^
+src/maze.cpp:42:32: warning: unused parameter 'x' [-Wunused-parameter]
+bool maze::can_travel(uint64_t x, uint64_t y, direction dir) const
+                               ^
+src/maze.cpp:42:44: warning: unused parameter 'y' [-Wunused-parameter]
+bool maze::can_travel(uint64_t x, uint64_t y, direction dir) const
+                                           ^
+src/maze.cpp:42:57: warning: unused parameter 'dir' [-Wunused-parameter]
+bool maze::can_travel(uint64_t x, uint64_t y, direction dir) const
+                                                        ^
+src/maze.cpp:48:30: warning: unused parameter 'x' [-Wunused-parameter]
+void maze::set_wall(uint64_t x, uint64_t y, direction dir, bool exists)
+                             ^
+src/maze.cpp:48:42: warning: unused parameter 'y' [-Wunused-parameter]
+void maze::set_wall(uint64_t x, uint64_t y, direction dir, bool exists)
+                                         ^
+src/maze.cpp:48:55: warning: unused parameter 'dir' [-Wunused-parameter]
+void maze::set_wall(uint64_t x, uint64_t y, direction dir, bool exists)
+                                                      ^
+src/maze.cpp:48:65: warning: unused parameter 'exists' [-Wunused-parameter]
+void maze::set_wall(uint64_t x, uint64_t y, direction dir, bool exists)
+                                                                ^
+src/maze.cpp:57:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+src/maze.cpp:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+In file included from src/maze.cpp:12:
+include/maze.h:180:14: warning: private field 'width_' is not used [-Wunused-private-field]
+    uint64_t width_;
+             ^
+include/maze.h:185:14: warning: private field 'height_' is not used [-Wunused-private-field]
+    uint64_t height_;
+             ^
+15 warnings generated.
+8 warnings generated.
+
+
+Running tests...
+================================================================
+addElements1  . . . . . . . . . [1 pts] - passed
+addElements2  . . . . . . . . . [1 pts] - passed
+testFindAndSetUnion1  . . . . . [2 pts] - passed
+testFindAndSetUnion2  . . . . . [2 pts] - passed
+testFindAndSetUnion3  . . . . . [2 pts] - passed
+minWeight_OneEdge_ReturnValue . [1 pts] - FAILED
+minWeight_OneEdge_EdgeLabel . . [1 pts] - FAILED
+minWeight_MultiEdge_ReturnValue [2 pts] - FAILED
+minWeight_MultiEdge_EdgeLabels  [2 pts] - FAILED
+minPath_OneEdge_ReturnValue . . [1 pts] - FAILED
+minPath_OneEdge_EdgeLabel . . . [1 pts] - FAILED
+minPath_MultiEdge_ReturnValue . [2 pts] - FAILED
+minPath_MultiEdge_EdgeLabels  . [2 pts] - FAILED
+kruskal_all . . . . . . . . . . [5 pts] - FAILED
+testMakeSmallMaze . . . . . . . [5 pts] - FAILED
+testMakeMazeConnected . . . . . [5 pts] - FAILED
+testMakeMazeAcyclic . . . . . . [5 pts] - passed
+testMakeMazeTree500 . . . . . . [5 pts] - FAILED
+testMakeMazeRandom  . . . . . . [5 pts] - FAILED
+testSolveMazeValidPath  . . . . [5 pts] - FAILED
+testSolutionBottomRow . . . . . [5 pts] - FAILED
+testSolutionCorrectSquare . . . [5 pts] - FAILED
+testSolveMazeSmall  . . . . . . [5 pts] - FAILED
+testSolveMazeLarge  . . . . . . [5 pts] - FAILED
+testDrawMazeSmall . . . . . . . [5 pts] - FAILED
+testDrawMazeMed . . . . . . . . [5 pts] - FAILED
+testDrawMazeLarge . . . . . . . [5 pts] - FAILED
+testDrawSolutionMed . . . . . . [5 pts] - FAILED
+testDrawSolutionLarge . . . . . [5 pts] - FAILED
+
+
+Total score...
+================================================================
+TOTAL SCORE: 13
+

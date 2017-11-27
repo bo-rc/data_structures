@@ -1,0 +1,35 @@
+Grading revision r1431 by boliu1, dated 2015-06-25 11:22:01.000125881 -0500 CDT
+Monad Autograder
+Testing mp_memory.1 at 2015-06-25 23:29:36
+
+"The first 90% of the code accounts for the first 90% of the development time. The remaining 10% of the code accounts for the other 90% of the development time." ~ Tom Cargill
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+ptr_empty (asan) . . . . . . [5 pts]  - passed
+ptr_full (asan)  . . . . . . [5 pts]  - passed
+ptr_clear (asan) . . . . . . [5 pts]  - passed
+ptr_deref_assign . . . . . . [5 pts]  - passed
+ptr_const_deref_signature  . [5 pts]  - passed
+ptr_no_copy_construction . . [5 pts]  - passed
+ptr_no_copy_assignment . . . [5 pts]  - passed
+ptr_move_construction (asan) [10 pts] - passed
+ptr_move_assignment (asan) . [10 pts] - passed
+ptr_get (asan) . . . . . . . [5 pts]  - passed
+ptr_no_copies (asan) . . . . [15 pts] - passed
+ptr_const_deref  . . . . . . [5 pts]  - passed
+ptr_const_get  . . . . . . . [5 pts]  - passed
+ptr_member_access  . . . . . [5 pts]  - passed
+ptr_const_member_access  . . [5 pts]  - passed
+ptr_swap (asan)  . . . . . . [5 pts]  - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

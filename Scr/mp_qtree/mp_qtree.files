@@ -1,0 +1,10 @@
+include/epng.h
+include/quadtree.h
+include/quadtree_given.h
+include/rgba_pixel.h
+src/epng.cpp
+src/main.cpp
+src/quadtree.cpp
+src/quadtree_given.cpp
+src/rgba_pixel.cpp
+Makefile

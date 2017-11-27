@@ -1,0 +1,30 @@
+Grading revision r7033 by boliu1, dated 2015-07-25 22:06:01.000122962 -0500 CDT
+Monad Autograder
+Testing lab_hash at 2015-07-25 23:11:52
+
+"A lot of the things that I say are true, but I don't actually mean them." ~ Alexey Stepanov
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+testRemoveEASY . [6 pts]  - passed
+testRemoveHard . [10 pts] - passed
+testResizeOnce . [7 pts]  - passed
+testResizeAll  . [11 pts] - passed
+testInsertEasy . [6 pts]  - passed
+testInsertHard . [10 pts] - passed
+testAnagramsSC . [8 pts]  - passed
+testAnagramsLP . [8 pts]  - passed
+testWordCountSC  [8 pts]  - passed
+testWordCountLP  [8 pts]  - passed
+testLogfileParse [18 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

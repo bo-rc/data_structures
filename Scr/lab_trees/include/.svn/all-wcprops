@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/su15-cs225/!svn/ver/4498/boliu1/lab_trees/include
+END
+printtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/su15-cs225/!svn/ver/3885/boliu1/lab_trees/include/printtree.h
+END
+binary_tree_given.tcc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/su15-cs225/!svn/ver/3885/boliu1/lab_trees/include/binary_tree_given.tcc
+END
+coloredout.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/su15-cs225/!svn/ver/3885/boliu1/lab_trees/include/coloredout.h
+END
+random.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/su15-cs225/!svn/ver/3885/boliu1/lab_trees/include/random.h
+END
+binary_tree.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/su15-cs225/!svn/ver/4498/boliu1/lab_trees/include/binary_tree.h
+END
+binary_tree.tcc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/su15-cs225/!svn/ver/4498/boliu1/lab_trees/include/binary_tree.tcc
+END

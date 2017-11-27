@@ -1,0 +1,44 @@
+Grading revision r5529 by boliu1, dated 2015-07-17 17:45:51.000903206 -0500 CDT
+Monad Autograder
+Testing mp_qtree.1 at 2015-07-20 00:35:55
+
+"The most likely way for the world to be destroyed, most experts agree, is by accident. That's where we come in; we're computer professionals. We cause accidents." ~ Nathaniel Borenstein
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_default_ctor  . . . . [4 pts] - passed
+test_ctor_1  . . . . . . . [4 pts] - passed
+test_ctor_2  . . . . . . . [4 pts] - passed
+test_build_tree_1  . . . . [4 pts] - passed
+test_build_tree_2  . . . . [4 pts] - passed
+test_build_tree_3  . . . . [4 pts] - passed
+test_cctor_1 . . . . . . . [2 pts] - passed
+test_cctor_2 . . . . . . . [2 pts] - FAILED
+test_cctor_3 . . . . . . . [2 pts] - passed
+test_cctor_4 . . . . . . . [4 pts] - passed
+test_assign_op_1 . . . . . [2 pts] - passed
+test_assign_op_2 . . . . . [2 pts] - FAILED
+test_assign_op_3 . . . . . [2 pts] - passed
+test_assign_op_4 . . . . . [4 pts] - passed
+test_get_pixel_1 . . . . . [4 pts] - FAILED
+test_get_pixel_2 . . . . . [4 pts] - passed
+test_get_pixel_3 . . . . . [4 pts] - FAILED
+test_get_pixel_4 . . . . . [4 pts] - FAILED
+test_decompress_unpruned_1 [4 pts] - FAILED
+test_decompress_unpruned_2 [4 pts] - passed
+test_decompress_unpruned_3 [6 pts] - passed
+test_decompress_unpruned_4 [6 pts] - passed
+time_get_pixel_logn  . . . [6 pts] - FAILED
+time_decompress_n (asan) . [6 pts] - FAILED
+valgrind_big3 (asan) . . . [8 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 68
+

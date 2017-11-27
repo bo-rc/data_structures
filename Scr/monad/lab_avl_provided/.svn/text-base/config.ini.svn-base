@@ -1,0 +1,18 @@
+[Required Files]
+include/avl_tree.tcc
+include/avl_tree.h
+
+[Testing Files]
+Makefile
+unit_tests.cpp
+include/avl_tree_given.tcc
+include/printtree.h
+soln_manyInserts.out
+soln_manyRotations.out
+soln_oneElement.out
+soln_simpleRotateLeft.out
+soln_simpleRotateRight.out
+soln_threeLeftRotates.out
+soln_threeRightRotates.out
+
+[Libraries]

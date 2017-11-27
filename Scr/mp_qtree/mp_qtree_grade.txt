@@ -1,0 +1,652 @@
+Grading revision r5922 by geigle1, dated 2015-07-18 23:39:31.000194135 -0500 CDT
+Monad Autograder
+Testing mp_qtree at 2015-07-19 23:16:51
+
+"I don't try to be a threat to Microsoft, mainly because I don't really see them as competition. Especially not Windows -- the goals of Linux and Windows are simply so different." ~ Linus Torvalds
+
+Setting up test environment...
+Compiling...
+================================================================
+unit_tests.cpp:335:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:343:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:353:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:363:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:364:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:373:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(13);
+    ~~~~~ ^
+unit_tests.cpp:381:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(200000);
+    ~~~~~ ^
+unit_tests.cpp:389:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(0);
+    ~~~~~ ^
+unit_tests.cpp:397:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:407:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:416:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:417:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:427:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:435:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(0ul, first.pruned_size(13));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:442:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(4ul, first.pruned_size(1));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:449:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(200000));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:456:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(0));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:463:34: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(37324ul, first.pruned_size(1000));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:470:34: error: no member named 'ideal_prune' in 'cs225::quadtree'
+    ASSERT_EQUALS(44802ul, first.ideal_prune(1));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+unit_tests.cpp:335:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:343:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:353:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:363:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:364:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:373:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(13);
+    ~~~~~ ^
+unit_tests.cpp:381:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(200000);
+    ~~~~~ ^
+unit_tests.cpp:389:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(0);
+    ~~~~~ ^
+unit_tests.cpp:397:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:407:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:416:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:417:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:427:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:435:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(0ul, first.pruned_size(13));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:442:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(4ul, first.pruned_size(1));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:449:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(200000));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:456:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(0));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:463:34: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(37324ul, first.pruned_size(1000));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:470:34: error: no member named 'ideal_prune' in 'cs225::quadtree'
+    ASSERT_EQUALS(44802ul, first.ideal_prune(1));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+unit_tests.cpp:335:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:343:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:353:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:363:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:364:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:373:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(13);
+    ~~~~~ ^
+unit_tests.cpp:381:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(200000);
+    ~~~~~ ^
+unit_tests.cpp:389:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(0);
+    ~~~~~ ^
+unit_tests.cpp:397:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:407:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:416:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:417:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:427:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:435:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(0ul, first.pruned_size(13));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:442:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(4ul, first.pruned_size(1));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:449:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(200000));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:456:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(0));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:463:34: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(37324ul, first.pruned_size(1000));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:470:34: error: no member named 'ideal_prune' in 'cs225::quadtree'
+    ASSERT_EQUALS(44802ul, first.ideal_prune(1));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+ld: no input files
+unit_tests.cpp:335:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:343:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:353:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:363:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:364:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:373:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(13);
+    ~~~~~ ^
+unit_tests.cpp:381:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(200000);
+    ~~~~~ ^
+unit_tests.cpp:389:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(0);
+    ~~~~~ ^
+unit_tests.cpp:397:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:407:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:416:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:417:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:427:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:435:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(0ul, first.pruned_size(13));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:442:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(4ul, first.pruned_size(1));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:449:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(200000));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:456:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(0));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:463:34: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(37324ul, first.pruned_size(1000));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:470:34: error: no member named 'ideal_prune' in 'cs225::quadtree'
+    ASSERT_EQUALS(44802ul, first.ideal_prune(1));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+unit_tests.cpp:335:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:343:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:353:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:363:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:364:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:373:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(13);
+    ~~~~~ ^
+unit_tests.cpp:381:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(200000);
+    ~~~~~ ^
+unit_tests.cpp:389:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(0);
+    ~~~~~ ^
+unit_tests.cpp:397:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:407:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:416:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:417:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:427:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:435:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(0ul, first.pruned_size(13));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:442:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(4ul, first.pruned_size(1));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:449:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(200000));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:456:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(0));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:463:34: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(37324ul, first.pruned_size(1000));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:470:34: error: no member named 'ideal_prune' in 'cs225::quadtree'
+    ASSERT_EQUALS(44802ul, first.ideal_prune(1));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+clang-3.5: error: no such file or directory: 'unit_tests.o'
+ld-monad: initial link failed, attempting partial-link...
+skipping unit test object object 'unit_tests.o'...
+running partial compilation...
+../source/cc-monad --force clang++ -Iinclude -std=c++14 -stdlib=libc++ -Wall -Wextra -c unit_tests.cpp -o 
+unit_tests.cpp:335:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:343:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:353:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:363:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:364:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:373:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(13);
+    ~~~~~ ^
+unit_tests.cpp:381:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(200000);
+    ~~~~~ ^
+unit_tests.cpp:389:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(0);
+    ~~~~~ ^
+unit_tests.cpp:397:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:407:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:416:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:417:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:427:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:435:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(0ul, first.pruned_size(13));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:442:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(4ul, first.pruned_size(1));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:449:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(200000));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:456:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(0));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:463:34: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(37324ul, first.pruned_size(1000));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:470:34: error: no member named 'ideal_prune' in 'cs225::quadtree'
+    ASSERT_EQUALS(44802ul, first.ideal_prune(1));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+ld: no input files
+unit_tests.cpp:335:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:343:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:353:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:363:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:364:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:373:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(13);
+    ~~~~~ ^
+unit_tests.cpp:381:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(200000);
+    ~~~~~ ^
+unit_tests.cpp:389:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(0);
+    ~~~~~ ^
+unit_tests.cpp:397:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:407:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:416:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:417:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:427:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:435:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(0ul, first.pruned_size(13));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:442:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(4ul, first.pruned_size(1));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:449:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(200000));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:456:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(0));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:463:34: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(37324ul, first.pruned_size(1000));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:470:34: error: no member named 'ideal_prune' in 'cs225::quadtree'
+    ASSERT_EQUALS(44802ul, first.ideal_prune(1));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+unit_tests.cpp:335:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:343:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:353:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:363:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:364:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:373:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(13);
+    ~~~~~ ^
+unit_tests.cpp:381:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(200000);
+    ~~~~~ ^
+unit_tests.cpp:389:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(0);
+    ~~~~~ ^
+unit_tests.cpp:397:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:407:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:416:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:417:11: error: no member named 'rotate_clockwise' in 'cs225::quadtree'
+    first.rotate_clockwise();
+    ~~~~~ ^
+unit_tests.cpp:427:11: error: no member named 'prune' in 'cs225::quadtree'
+    first.prune(10000);
+    ~~~~~ ^
+unit_tests.cpp:435:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(0ul, first.pruned_size(13));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:442:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(4ul, first.pruned_size(1));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:449:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(200000));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:456:30: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(1ul, first.pruned_size(0));
+                       ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:463:34: error: no member named 'pruned_size' in 'cs225::quadtree'
+    ASSERT_EQUALS(37324ul, first.pruned_size(1000));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+unit_tests.cpp:470:34: error: no member named 'ideal_prune' in 'cs225::quadtree'
+    ASSERT_EQUALS(44802ul, first.ideal_prune(1));
+                           ~~~~~ ^
+./proxy.h:318:62: note: expanded from macro 'ASSERT_EQUALS'
+                std::string errormsg = proxy::assert_equals_help(expected, actual, #expected, #actual);  \
+                                                                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+ld: no input files
+2 splits found: 1 regular, 1 helper...
+clang-3.5: error: no such file or directory: 'unit_tests.o.0'
+clang-3.5: error: no such file or directory: 'unit_tests.o.1'
+failed to link split 1
+clang-3.5: error: no such file or directory: 'unit_tests.o.0'
+partial linking failed, aborting
+make: *** [proxy] Error 1
+make: *** Waiting for unfinished jobs....
+
+
+Running tests...
+================================================================
+Could not execute test cases
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

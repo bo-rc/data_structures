@@ -1,0 +1,4 @@
+*.o
+graphdemo
+graph_tests
+images/*

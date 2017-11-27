@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/su15-cs225/!svn/ver/6513/_shared/lab_hash_provided
+END
+log.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/su15-cs225/!svn/ver/6513/_shared/lab_hash_provided/log.txt
+END
+textHard.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/su15-cs225/!svn/ver/6513/_shared/lab_hash_provided/textHard.txt
+END
+textLong.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/su15-cs225/!svn/ver/6513/_shared/lab_hash_provided/textLong.txt
+END
+unit_tests.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/su15-cs225/!svn/ver/6513/_shared/lab_hash_provided/unit_tests.cpp
+END
+wordCount.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/su15-cs225/!svn/ver/6513/_shared/lab_hash_provided/wordCount.txt
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/su15-cs225/!svn/ver/6513/_shared/lab_hash_provided/config.ini
+END
+textEasy.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/su15-cs225/!svn/ver/6513/_shared/lab_hash_provided/textEasy.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/su15-cs225/!svn/ver/6513/_shared/lab_hash_provided/Makefile
+END

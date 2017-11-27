@@ -1,0 +1,133 @@
+Grading revision r5360 by boliu1, dated 2015-07-13 23:00:53.000659154 -0500 CDT
+Monad Autograder
+Testing mp_parse at 2015-07-17 19:17:55
+
+"Worry loudly now or scream louder later." ~ Michael Lopp
+
+Setting up test environment...
+Compiling...
+================================================================
+unit_tests.cpp:191:9: error: use of overloaded operator '=' is ambiguous (with operand types 'circ_array<int>' and 'typename remove_reference<circ_array<int> &>::type' (aka 'cs225::circ_array<int>'))
+    mvd = std::move(arr);
+    ~~~ ^ ~~~~~~~~~~~~~~
+include/circ_array.h:56:17: note: candidate function
+    circ_array& operator=(circ_array rhs);
+                ^
+include/circ_array.h:58:17: note: candidate function
+    circ_array& operator=(circ_array&& rhs);
+                ^
+1 error generated.
+In file included from src/lex.cpp:8:
+In file included from include/lex.h:11:
+In file included from include/queue.h:10:
+In file included from include/circ_array.h:176:
+include/circ_array.tcc:40:17: error: object of type 'std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' cannot be assigned because its copy assignment operator is implicitly deleted
+        arr_[i] = other[i];
+                ^
+include/circ_array.tcc:154:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::circ_array' requested here
+    auto circ_array_copy(*this);
+         ^
+include/circ_array.tcc:173:9: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::resize' requested here
+        resize();
+        ^
+include/circ_array.tcc:118:5: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::add' requested here
+    add(size_, std::move(elem));
+    ^
+include/queue.tcc:33:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::push_back' requested here
+    arr_.push_back(std::move(elem));
+         ^
+src/lex.cpp:32:16: note: in instantiation of member function 'cs225::queue<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::push' requested here
+        tokens.push(std::move(tok));
+               ^
+/class/cs225/lm35/bin/../include/c++/v1/memory:2515:31: note: copy assignment operator is implicitly deleted because 'unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' has a user-declared move constructor
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(unique_ptr&& __u) _NOEXCEPT
+                              ^
+1 error generated.
+make: *** [lex.o] Error 1
+make: *** Waiting for unfinished jobs....
+src/parser.cpp:51:20: error: non-const lvalue reference to type 'queue<[...]>' cannot bind to a temporary of type 'queue<[...]>'
+    return p.parse(std::move(tokens));
+                   ^~~~~~~~~~~~~~~~~
+src/parser.cpp:31:64: note: passing argument to parameter 'tokens' here
+    std::unique_ptr<node> parse(queue<std::unique_ptr<token>>& tokens);
+                                                               ^
+src/parser.cpp:58:15: warning: unused variable 'tok' [-Wunused-variable]
+        auto& tok = tokens.front();
+              ^
+In file included from src/parser.cpp:8:
+In file included from include/parser.h:12:
+In file included from include/queue.h:10:
+In file included from include/circ_array.h:176:
+include/circ_array.tcc:197:7: error: call to implicitly-deleted copy constructor of 'std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >'
+    T x = arr_[pos(idx)];
+      ^   ~~~~~~~~~~~~~~
+include/circ_array.tcc:124:5: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::remove' requested here
+    remove(0);
+    ^
+include/queue.tcc:39:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::pop_front' requested here
+    arr_.pop_front();
+         ^
+src/parser.cpp:60:16: note: in instantiation of member function 'cs225::queue<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::pop' requested here
+        tokens.pop();
+               ^
+/class/cs225/lm35/bin/../include/c++/v1/memory:2515:31: note: copy constructor is implicitly deleted because 'unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' has a user-declared move constructor
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(unique_ptr&& __u) _NOEXCEPT
+                              ^
+In file included from src/parser.cpp:8:
+In file included from include/parser.h:12:
+In file included from include/queue.h:10:
+In file included from include/circ_array.h:176:
+include/circ_array.tcc:202:26: error: object of type 'std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' cannot be assigned because its copy assignment operator is implicitly deleted
+            arr_[pos(i)] = arr_[pos(i - 1)];
+                         ^
+/class/cs225/lm35/bin/../include/c++/v1/memory:2515:31: note: copy assignment operator is implicitly deleted because 'unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' has a user-declared move constructor
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(unique_ptr&& __u) _NOEXCEPT
+                              ^
+In file included from src/parser.cpp:8:
+In file included from include/parser.h:12:
+In file included from include/queue.h:10:
+In file included from include/circ_array.h:176:
+include/circ_array.tcc:40:17: error: object of type 'std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' cannot be assigned because its copy assignment operator is implicitly deleted
+        arr_[i] = other[i];
+                ^
+include/circ_array.tcc:154:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::circ_array' requested here
+    auto circ_array_copy(*this);
+         ^
+include/circ_array.tcc:215:9: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::resize' requested here
+        resize();
+        ^
+include/circ_array.tcc:124:5: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::remove' requested here
+    remove(0);
+    ^
+include/queue.tcc:39:10: note: in instantiation of member function 'cs225::circ_array<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::pop_front' requested here
+    arr_.pop_front();
+         ^
+src/parser.cpp:60:16: note: in instantiation of member function 'cs225::queue<std::__1::unique_ptr<cs225::token, std::__1::default_delete<cs225::token> > >::pop' requested here
+        tokens.pop();
+               ^
+/class/cs225/lm35/bin/../include/c++/v1/memory:2515:31: note: copy assignment operator is implicitly deleted because 'unique_ptr<cs225::token, std::__1::default_delete<cs225::token> >' has a user-declared move constructor
+    _LIBCPP_INLINE_VISIBILITY unique_ptr(unique_ptr&& __u) _NOEXCEPT
+                              ^
+1 warning and 4 errors generated.
+make: *** [parser.o] Error 1
+unit_tests.cpp:191:9: error: use of overloaded operator '=' is ambiguous (with operand types 'circ_array<int>' and 'typename remove_reference<circ_array<int> &>::type' (aka 'cs225::circ_array<int>'))
+    mvd = std::move(arr);
+    ~~~ ^ ~~~~~~~~~~~~~~
+include/circ_array.h:56:17: note: candidate function
+    circ_array& operator=(circ_array rhs);
+                ^
+include/circ_array.h:58:17: note: candidate function
+    circ_array& operator=(circ_array&& rhs);
+                ^
+1 error generated.
+
+
+Running tests...
+================================================================
+Could not execute test cases
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

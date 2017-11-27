@@ -1,0 +1,138 @@
+Grading revision r2532 by boliu1, dated 2015-06-30 21:13:37.000947996 -0500 CDT
+Monad Autograder
+Testing mp_memory at 2015-07-17 18:47:17
+
+"On two occasions, I have been asked [by members of Parliament], 'Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?' I am not able to rightly apprehend the kind of confusion of ideas that could provoke such a question." ~ Charles Babbage
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+ptr_empty (asan) . . . . . . . . . . [1 pts] - passed
+ptr_full (asan)  . . . . . . . . . . [1 pts] - passed
+ptr_clear (asan) . . . . . . . . . . [1 pts] - passed
+ptr_deref_assign . . . . . . . . . . [1 pts] - passed
+ptr_const_deref_signature  . . . . . [1 pts] - passed
+ptr_no_copy_construction . . . . . . [1 pts] - passed
+ptr_no_copy_assignment . . . . . . . [1 pts] - passed
+ptr_move_construction (asan) . . . . [1 pts] - passed
+ptr_move_assignment (asan) . . . . . [1 pts] - passed
+ptr_get (asan) . . . . . . . . . . . [1 pts] - passed
+ptr_no_copies (asan) . . . . . . . . [1 pts] - passed
+ptr_const_deref  . . . . . . . . . . [1 pts] - passed
+ptr_const_get  . . . . . . . . . . . [1 pts] - passed
+ptr_member_access  . . . . . . . . . [1 pts] - passed
+ptr_const_member_access  . . . . . . [1 pts] - passed
+ptr_swap (asan)  . . . . . . . . . . [1 pts] - passed
+array_empty (asan) . . . . . . . . . [1 pts] - passed
+array_sized (asan) . . . . . . . . . [1 pts] - passed
+array_sized_class_type (asan)  . . . [1 pts] - passed
+array_const_subscript  . . . . . . . [1 pts] - passed
+array_const_at . . . . . . . . . . . [1 pts] - passed
+array_copy_construction (asan) . . . [1 pts] - passed
+array_move_construction (asan) . . . [1 pts] - passed
+array_copy_assignment (asan) . . . . [1 pts] - passed
+array_move_assignment (asan) . . . . [1 pts] - passed
+array_clear (asan) . . . . . . . . . [1 pts] - passed
+array_swap (asan)  . . . . . . . . . [1 pts] - passed
+array_resize_smaller (asan)  . . . . [1 pts] - passed
+array_resize_smaller_moveonly (asan) [1 pts] - passed
+array_resize_larger (asan) . . . . . [1 pts] - passed
+array_resize_larger_moveonly (asan)  [1 pts] - passed
+array_resize_zero (asan) . . . . . . [2 pts] - passed
+collage_emplace_valid  . . . . . . . [2 pts] - passed
+collage_emplace_invalid  . . . . . . [1 pts] - FAILED: Segmentation fault
+collage_at_assign  . . . . . . . . . [2 pts] - passed
+collage_at_empty . . . . . . . . . . [2 pts] - passed
+collage_at_invalid . . . . . . . . . [2 pts] - FAILED: Segmentation fault
+collage_const_at . . . . . . . . . . [1 pts] - passed
+collage_set_layers_larger (asan) . . [3 pts] - passed
+collage_set_layers_smaller (asan)  . [3 pts] - passed
+collage_copy_constructor . . . . . . [2 pts] - passed
+collage_copy_constructor_deep  . . . [2 pts] - passed
+collage_move_ctor_1  . . . . . . . . [2 pts] - passed
+collage_move_ctor_2 (asan) . . . . . [3 pts] - FAILED: unit_tests.cpp:731: Assertion (c.layers() == 0) failed
+collage_copy_assign  . . . . . . . . [2 pts] - passed
+collage_copy_assign_deep . . . . . . [2 pts] - passed
+collage_move_assign_1  . . . . . . . [2 pts] - passed
+collage_move_assign_2  . . . . . . . [2 pts] - FAILED: unit_tests.cpp:790: Assertion (c.layers() == 0) failed
+collage_swap . . . . . . . . . . . . [2 pts] - passed
+collage_change_layer . . . . . . . . [2 pts] - passed
+collage_change_layer_invalid . . . . [1 pts] - FAILED: Segmentation fault
+collage_draw_1 . . . . . . . . . . . [2 pts] - passed
+collage_draw_2 . . . . . . . . . . . [2 pts] - passed
+collage_draw_3 . . . . . . . . . . . [2 pts] - passed
+collage_draw_4 . . . . . . . . . . . [2 pts] - passed
+collage_draw_change_layer  . . . . . [2 pts] - passed
+collage_draw_erase_picture . . . . . [2 pts] - passed
+collage_draw_position_1  . . . . . . [2 pts] - passed
+collage_draw_position_2  . . . . . . [2 pts] - passed
+collage_position_invalid_1 . . . . . [2 pts] - passed
+collage_position_invalid_2 . . . . . [2 pts] - passed
+collage_erase_invalid  . . . . . . . [2 pts] - FAILED: Segmentation fault
+collage_memory_safety_1 (asan) . . . [3 pts] - passed
+collage_memory_safety_2 (asan) . . . [4 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 89
+
+
+
+Detailed test output...
+================================================================
+----------------------------------------------------------------
+collage_emplace_invalid [1 points]
+Result: FAILED: Segmentation fault
+Took 0ms (2000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+collage_at_invalid [2 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+collage_move_ctor_2 (run under asan) [3 points]
+Result: FAILED: unit_tests.cpp:731: Assertion (c.layers() == 0) failed
+Took unknown time (2000ms timeout)
+Output:
+----------------------------------------------------------------
+Running collage_move_ctor_2 [worth 3 points, output below]
+Result: FAILED:
+unit_tests.cpp:731: Assertion (c.layers() == 0) failed
+
+----------------------------------------------------------------
+collage_move_assign_2 [2 points]
+Result: FAILED: unit_tests.cpp:790: Assertion (c.layers() == 0) failed
+Took 0ms (2000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+collage_change_layer_invalid [1 points]
+Result: FAILED: Segmentation fault
+Took 0ms (2000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+collage_erase_invalid [2 points]
+Result: FAILED: Segmentation fault
+Took 0ms (2000ms timeout)
+Output:
+----------------------------------------------------------------
+
+
+----------------------------------------------------------------
+Total score...
+================================================================
+TOTAL SCORE: 89
+

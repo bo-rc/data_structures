@@ -1,0 +1,141 @@
+Grading revision r2194 by geigle1, dated 2015-06-29 16:19:41.00058748 -0500 CDT
+Monad Autograder
+Testing mp_list.1 at 2015-07-03 23:34:56
+
+"I like it because it feels like I'm drinking something special." ~ Sean Massung
+
+Setting up test environment...
+Compiling...
+================================================================
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:21:36: warning: unused parameter 'other' [-Wunused-parameter]
+dl_list<T>::dl_list(const dl_list& other)
+                                   ^
+include/dl_list.tcc:28:31: warning: unused parameter 'other' [-Wunused-parameter]
+dl_list<T>::dl_list(dl_list&& other)
+                              ^
+include/dl_list.tcc:34:43: warning: unused parameter 'rhs' [-Wunused-parameter]
+dl_list<T>& dl_list<T>::operator=(dl_list rhs)
+                                          ^
+include/dl_list.tcc:40:32: warning: unused parameter 'other' [-Wunused-parameter]
+void dl_list<T>::swap(dl_list& other)
+                               ^
+include/dl_list.tcc:46:30: warning: unused parameter 'data' [-Wunused-parameter]
+void dl_list<T>::push_back(T data)
+                             ^
+include/dl_list.tcc:52:31: warning: unused parameter 'data' [-Wunused-parameter]
+void dl_list<T>::push_front(T data)
+                              ^
+include/dl_list.tcc:64:49: warning: unused parameter 'first' [-Wunused-parameter]
+void dl_list<T>::reverse(std::unique_ptr<node>& first, node*& last)
+                                                ^
+include/dl_list.tcc:64:63: warning: unused parameter 'last' [-Wunused-parameter]
+void dl_list<T>::reverse(std::unique_ptr<node>& first, node*& last)
+                                                              ^
+include/dl_list.tcc:70:39: warning: unused parameter 'n' [-Wunused-parameter]
+void dl_list<T>::reverse_nth(unsigned n)
+                                      ^
+include/dl_list.tcc:113:30: warning: unused parameter 'start' [-Wunused-parameter]
+auto dl_list<T>::split(node* start, unsigned split_point)
+                             ^
+include/dl_list.tcc:134:46: warning: unused parameter 'first' [-Wunused-parameter]
+auto dl_list<T>::merge(std::unique_ptr<node> first,
+                                             ^
+include/dl_list.tcc:135:46: warning: unused parameter 'second' [-Wunused-parameter]
+                       std::unique_ptr<node> second) -> std::unique_ptr<node>
+                                             ^
+include/dl_list.tcc:152:50: warning: unused parameter 'start' [-Wunused-parameter]
+auto dl_list<T>::mergesort(std::unique_ptr<node> start, uint64_t length)
+                                                 ^
+include/dl_list.tcc:152:66: warning: unused parameter 'length' [-Wunused-parameter]
+auto dl_list<T>::mergesort(std::unique_ptr<node> start, uint64_t length)
+                                                                 ^
+14 warnings generated.
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:21:36: warning: unused parameter 'other' [-Wunused-parameter]
+dl_list<T>::dl_list(const dl_list& other)
+                                   ^
+include/dl_list.tcc:28:31: warning: unused parameter 'other' [-Wunused-parameter]
+dl_list<T>::dl_list(dl_list&& other)
+                              ^
+include/dl_list.tcc:34:43: warning: unused parameter 'rhs' [-Wunused-parameter]
+dl_list<T>& dl_list<T>::operator=(dl_list rhs)
+                                          ^
+include/dl_list.tcc:40:32: warning: unused parameter 'other' [-Wunused-parameter]
+void dl_list<T>::swap(dl_list& other)
+                               ^
+include/dl_list.tcc:46:30: warning: unused parameter 'data' [-Wunused-parameter]
+void dl_list<T>::push_back(T data)
+                             ^
+include/dl_list.tcc:52:31: warning: unused parameter 'data' [-Wunused-parameter]
+void dl_list<T>::push_front(T data)
+                              ^
+include/dl_list.tcc:64:49: warning: unused parameter 'first' [-Wunused-parameter]
+void dl_list<T>::reverse(std::unique_ptr<node>& first, node*& last)
+                                                ^
+include/dl_list.tcc:64:63: warning: unused parameter 'last' [-Wunused-parameter]
+void dl_list<T>::reverse(std::unique_ptr<node>& first, node*& last)
+                                                              ^
+include/dl_list.tcc:70:39: warning: unused parameter 'n' [-Wunused-parameter]
+void dl_list<T>::reverse_nth(unsigned n)
+                                      ^
+include/dl_list.tcc:113:30: warning: unused parameter 'start' [-Wunused-parameter]
+auto dl_list<T>::split(node* start, unsigned split_point)
+                             ^
+include/dl_list.tcc:134:46: warning: unused parameter 'first' [-Wunused-parameter]
+auto dl_list<T>::merge(std::unique_ptr<node> first,
+                                             ^
+include/dl_list.tcc:135:46: warning: unused parameter 'second' [-Wunused-parameter]
+                       std::unique_ptr<node> second) -> std::unique_ptr<node>
+                                             ^
+include/dl_list.tcc:152:50: warning: unused parameter 'start' [-Wunused-parameter]
+auto dl_list<T>::mergesort(std::unique_ptr<node> start, uint64_t length)
+                                                 ^
+include/dl_list.tcc:152:66: warning: unused parameter 'length' [-Wunused-parameter]
+auto dl_list<T>::mergesort(std::unique_ptr<node> start, uint64_t length)
+                                                                 ^
+14 warnings generated.
+
+
+Running tests...
+================================================================
+test_push_front . . . . . . . . . . [2 pts] - FAILED
+test_push_back  . . . . . . . . . . [2 pts] - FAILED
+test_dtor_10 (asan) . . . . . . . . [5 pts] - FAILED
+test_dtor_37 (asan) . . . . . . . . [5 pts] - FAILED
+test_reverse_20_size  . . . . . . . [1 pts] - FAILED
+test_reverse_20_forward . . . . . . [3 pts] - FAILED
+test_reverse_20_backward  . . . . . [4 pts] - FAILED
+test_reverse_37_size  . . . . . . . [1 pts] - FAILED
+test_reverse_37_forward . . . . . . [2 pts] - FAILED
+test_reverse_37_backward  . . . . . [2 pts] - FAILED
+test_reverse_empty (asan) . . . . . [5 pts] - FAILED
+test_reverse_20_memory (asan) . . . [3 pts] - FAILED
+test_reverse_nth_20_2_size  . . . . [1 pts] - FAILED
+test_reverse_nth_20_2_forward . . . [3 pts] - FAILED
+test_reverse_nth_20_2_backward  . . [4 pts] - FAILED
+test_reverse_nth_37_4_size  . . . . [1 pts] - FAILED
+test_reverse_nth_37_4_forward . . . [5 pts] - FAILED
+test_reverse_nth_37_4_backward  . . [6 pts] - FAILED
+test_reverse_nth_37_37  . . . . . . [3 pts] - FAILED
+test_reverse_nth_37_4_memory (asan) [3 pts] - FAILED
+test_reverse_nth_empty (asan) . . . [5 pts] - FAILED
+test_waterfall_4_size . . . . . . . [1 pts] - FAILED
+test_waterfall_4_forward  . . . . . [3 pts] - FAILED
+test_waterfall_4_backward . . . . . [4 pts] - FAILED
+test_waterfall_7_size . . . . . . . [1 pts] - FAILED
+test_waterfall_7_forward  . . . . . [3 pts] - FAILED
+test_waterfall_7_backward . . . . . [4 pts] - FAILED
+testWaterfall12_size  . . . . . . . [1 pts] - FAILED
+testWaterfall12_forward . . . . . . [3 pts] - FAILED
+testWaterfall12_backward  . . . . . [4 pts] - FAILED
+test_waterfall_7_memory (asan)  . . [5 pts] - FAILED
+test_waterfall_empty (asan) . . . . [5 pts] - FAILED
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

@@ -1,0 +1,24 @@
+Grading revision r1174 by boliu1, dated 2015-06-23 19:41:16.000249703 -0500 CDT
+Monad Autograder
+Testing lab_allocate at 2015-06-25 23:12:34
+
+"I would build pyramids, if I were Pharoah." ~ Kyle Johnson
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_constructor (asan) [5 pts]  - passed
+test_allocate (asan)  . [5 pts]  - passed
+test_printrooms (asan)  [20 pts] - passed
+test_any_output . . . . [30 pts] - passed
+test_correct_output . . [40 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

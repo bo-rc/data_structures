@@ -1,0 +1,229 @@
+Grading revision r3194 by geigle1, dated 2015-07-04 23:46:11.00087273 -0500 CDT
+Monad Autograder
+Testing mp_list at 2015-07-05 23:13:09
+
+"You think the sky is like a big big plate." ~ Prof. Jiawei Han
+
+Setting up test environment...
+Compiling...
+================================================================
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:21:36: warning: unused parameter 'other' [-Wunused-parameter]
+dl_list<T>::dl_list(const dl_list& other)
+                                   ^
+include/dl_list.tcc:28:31: warning: unused parameter 'other' [-Wunused-parameter]
+dl_list<T>::dl_list(dl_list&& other)
+                              ^
+include/dl_list.tcc:34:43: warning: unused parameter 'rhs' [-Wunused-parameter]
+dl_list<T>& dl_list<T>::operator=(dl_list rhs)
+                                          ^
+include/dl_list.tcc:40:32: warning: unused parameter 'other' [-Wunused-parameter]
+void dl_list<T>::swap(dl_list& other)
+                               ^
+include/dl_list.tcc:46:30: warning: unused parameter 'data' [-Wunused-parameter]
+void dl_list<T>::push_back(T data)
+                             ^
+include/dl_list.tcc:52:31: warning: unused parameter 'data' [-Wunused-parameter]
+void dl_list<T>::push_front(T data)
+                              ^
+include/dl_list.tcc:64:49: warning: unused parameter 'first' [-Wunused-parameter]
+void dl_list<T>::reverse(std::unique_ptr<node>& first, node*& last)
+                                                ^
+include/dl_list.tcc:64:63: warning: unused parameter 'last' [-Wunused-parameter]
+void dl_list<T>::reverse(std::unique_ptr<node>& first, node*& last)
+                                                              ^
+include/dl_list.tcc:70:39: warning: unused parameter 'n' [-Wunused-parameter]
+void dl_list<T>::reverse_nth(unsigned n)
+                                      ^
+include/dl_list.tcc:113:30: warning: unused parameter 'start' [-Wunused-parameter]
+auto dl_list<T>::split(node* start, unsigned split_point)
+                             ^
+include/dl_list.tcc:134:46: warning: unused parameter 'first' [-Wunused-parameter]
+auto dl_list<T>::merge(std::unique_ptr<node> first,
+                                             ^
+include/dl_list.tcc:135:46: warning: unused parameter 'second' [-Wunused-parameter]
+                       std::unique_ptr<node> second) -> std::unique_ptr<node>
+                                             ^
+include/dl_list.tcc:152:50: warning: unused parameter 'start' [-Wunused-parameter]
+auto dl_list<T>::mergesort(std::unique_ptr<node> start, uint64_t length)
+                                                 ^
+include/dl_list.tcc:152:66: warning: unused parameter 'length' [-Wunused-parameter]
+auto dl_list<T>::mergesort(std::unique_ptr<node> start, uint64_t length)
+                                                                 ^
+include/dl_list.tcc:118:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+include/dl_list.tcc:95:21: note: in instantiation of member function 'cs225::dl_list<int>::split' requested here
+    auto new_head = split(head_.get(), split_point);
+                    ^
+unit_tests.cpp:462:31: note: in instantiation of member function 'cs225::dl_list<int>::split' requested here
+    dl_list<int> split = list.split(3);
+                              ^
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+include/dl_list.tcc:123:13: note: in instantiation of member function 'cs225::dl_list<int>::merge' requested here
+    head_ = merge(std::move(head_), std::move(to_merge.head_));
+            ^
+unit_tests.cpp:521:15: note: in instantiation of member function 'cs225::dl_list<int>::merge' requested here
+    firstlist.merge(secondlist);
+              ^
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:156:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+include/dl_list.tcc:146:13: note: in instantiation of member function 'cs225::dl_list<int>::mergesort' requested here
+    head_ = mergesort(std::move(head_), size_);
+            ^
+unit_tests.cpp:555:10: note: in instantiation of member function 'cs225::dl_list<int>::sort' requested here
+    list.sort();
+         ^
+17 warnings generated.
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:21:36: warning: unused parameter 'other' [-Wunused-parameter]
+dl_list<T>::dl_list(const dl_list& other)
+                                   ^
+include/dl_list.tcc:28:31: warning: unused parameter 'other' [-Wunused-parameter]
+dl_list<T>::dl_list(dl_list&& other)
+                              ^
+include/dl_list.tcc:34:43: warning: unused parameter 'rhs' [-Wunused-parameter]
+dl_list<T>& dl_list<T>::operator=(dl_list rhs)
+                                          ^
+include/dl_list.tcc:40:32: warning: unused parameter 'other' [-Wunused-parameter]
+void dl_list<T>::swap(dl_list& other)
+                               ^
+include/dl_list.tcc:46:30: warning: unused parameter 'data' [-Wunused-parameter]
+void dl_list<T>::push_back(T data)
+                             ^
+include/dl_list.tcc:52:31: warning: unused parameter 'data' [-Wunused-parameter]
+void dl_list<T>::push_front(T data)
+                              ^
+include/dl_list.tcc:64:49: warning: unused parameter 'first' [-Wunused-parameter]
+void dl_list<T>::reverse(std::unique_ptr<node>& first, node*& last)
+                                                ^
+include/dl_list.tcc:64:63: warning: unused parameter 'last' [-Wunused-parameter]
+void dl_list<T>::reverse(std::unique_ptr<node>& first, node*& last)
+                                                              ^
+include/dl_list.tcc:70:39: warning: unused parameter 'n' [-Wunused-parameter]
+void dl_list<T>::reverse_nth(unsigned n)
+                                      ^
+include/dl_list.tcc:113:30: warning: unused parameter 'start' [-Wunused-parameter]
+auto dl_list<T>::split(node* start, unsigned split_point)
+                             ^
+include/dl_list.tcc:134:46: warning: unused parameter 'first' [-Wunused-parameter]
+auto dl_list<T>::merge(std::unique_ptr<node> first,
+                                             ^
+include/dl_list.tcc:135:46: warning: unused parameter 'second' [-Wunused-parameter]
+                       std::unique_ptr<node> second) -> std::unique_ptr<node>
+                                             ^
+include/dl_list.tcc:152:50: warning: unused parameter 'start' [-Wunused-parameter]
+auto dl_list<T>::mergesort(std::unique_ptr<node> start, uint64_t length)
+                                                 ^
+include/dl_list.tcc:152:66: warning: unused parameter 'length' [-Wunused-parameter]
+auto dl_list<T>::mergesort(std::unique_ptr<node> start, uint64_t length)
+                                                                 ^
+include/dl_list.tcc:118:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+include/dl_list.tcc:95:21: note: in instantiation of member function 'cs225::dl_list<int>::split' requested here
+    auto new_head = split(head_.get(), split_point);
+                    ^
+unit_tests.cpp:462:31: note: in instantiation of member function 'cs225::dl_list<int>::split' requested here
+    dl_list<int> split = list.split(3);
+                              ^
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+include/dl_list.tcc:123:13: note: in instantiation of member function 'cs225::dl_list<int>::merge' requested here
+    head_ = merge(std::move(head_), std::move(to_merge.head_));
+            ^
+unit_tests.cpp:521:15: note: in instantiation of member function 'cs225::dl_list<int>::merge' requested here
+    firstlist.merge(secondlist);
+              ^
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:156:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+include/dl_list.tcc:146:13: note: in instantiation of member function 'cs225::dl_list<int>::mergesort' requested here
+    head_ = mergesort(std::move(head_), size_);
+            ^
+unit_tests.cpp:555:10: note: in instantiation of member function 'cs225::dl_list<int>::sort' requested here
+    list.sort();
+         ^
+17 warnings generated.
+
+
+Running tests...
+================================================================
+test_push_front . . . . . . . . . . [2 pts]  - FAILED
+test_push_back  . . . . . . . . . . [2 pts]  - FAILED
+test_dtor_10 (asan) . . . . . . . . [3 pts]  - FAILED
+test_dtor_37 (asan) . . . . . . . . [3 pts]  - FAILED
+test_reverse_20_size  . . . . . . . [1 pts]  - FAILED
+test_reverse_20_forward . . . . . . [1 pts]  - FAILED
+test_reverse_20_backward  . . . . . [1 pts]  - FAILED
+test_reverse_37_size  . . . . . . . [1 pts]  - FAILED
+test_reverse_37_forward . . . . . . [1 pts]  - FAILED
+test_reverse_37_backward  . . . . . [1 pts]  - FAILED
+test_reverse_empty (asan) . . . . . [1 pts]  - FAILED
+test_reverse_20_memory (asan) . . . [1 pts]  - FAILED
+test_reverse_nth_20_2_size  . . . . [1 pts]  - FAILED
+test_reverse_nth_20_2_forward . . . [1 pts]  - FAILED
+test_reverse_nth_20_2_backward  . . [1 pts]  - FAILED
+test_reverse_nth_37_4_size  . . . . [1 pts]  - FAILED
+test_reverse_nth_37_4_forward . . . [1 pts]  - FAILED
+test_reverse_nth_37_4_backward  . . [1 pts]  - FAILED
+test_reverse_nth_37_37  . . . . . . [1 pts]  - FAILED
+test_reverse_nth_37_4_memory (asan) [1 pts]  - FAILED
+test_reverse_nth_empty (asan) . . . [1 pts]  - FAILED
+test_waterfall_4_size . . . . . . . [1 pts]  - FAILED
+test_waterfall_4_forward  . . . . . [1 pts]  - FAILED
+test_waterfall_4_backward . . . . . [2 pts]  - FAILED
+test_waterfall_7_size . . . . . . . [1 pts]  - FAILED
+test_waterfall_7_forward  . . . . . [1 pts]  - FAILED
+test_waterfall_7_backward . . . . . [2 pts]  - FAILED
+testWaterfall12_size  . . . . . . . [1 pts]  - FAILED
+testWaterfall12_forward . . . . . . [1 pts]  - FAILED
+testWaterfall12_backward  . . . . . [2 pts]  - FAILED
+test_waterfall_7_memory (asan)  . . [3 pts]  - FAILED
+test_waterfall_empty (asan) . . . . [3 pts]  - FAILED
+test_split_5_this_size  . . . . . . [1 pts]  - FAILED
+test_split_5_this_forward . . . . . [1 pts]  - FAILED
+test_split_5_this_backward  . . . . [1 pts]  - FAILED
+test_split_5_split_size . . . . . . [1 pts]  - FAILED
+test_split_5_split_forward  . . . . [1 pts]  - FAILED
+test_split_5_split_backward . . . . [1 pts]  - FAILED
+test_split_5_mem (asan) . . . . . . [3 pts]  - FAILED
+test_merge_size . . . . . . . . . . [1 pts]  - FAILED
+test_merge_forward  . . . . . . . . [1 pts]  - FAILED
+test_merge_backward . . . . . . . . [1 pts]  - FAILED
+test_merge_mem (asan) . . . . . . . [3 pts]  - FAILED
+test_sort_16p_s . . . . . . . . . . [1 pts]  - FAILED
+test_sort_16p_f . . . . . . . . . . [2 pts]  - FAILED
+test_sort_16p_b . . . . . . . . . . [2 pts]  - FAILED
+test_sort_20p_s . . . . . . . . . . [1 pts]  - FAILED
+test_sort_20p_f . . . . . . . . . . [2 pts]  - FAILED
+test_sort_20p_b . . . . . . . . . . [2 pts]  - FAILED
+test_sort_27p_s . . . . . . . . . . [1 pts]  - FAILED
+test_sort_27p_f . . . . . . . . . . [2 pts]  - FAILED
+test_sort_27p_b . . . . . . . . . . [2 pts]  - FAILED
+test_sort_empty . . . . . . . . . . [5 pts]  - FAILED
+test_sort_259p_s  . . . . . . . . . [1 pts]  - FAILED
+test_sort_259p_f  . . . . . . . . . [2 pts]  - FAILED
+test_sort_259p_b  . . . . . . . . . [2 pts]  - FAILED
+test_sort_memory (asan) . . . . . . [5 pts]  - FAILED
+test_sort_nlogn . . . . . . . . . . [10 pts] - FAILED
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

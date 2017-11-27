@@ -1,0 +1,910 @@
+Grading revision r3328 by geigle1, dated 2015-07-05 23:29:56.000770719 -0500 CDT
+Monad Autograder
+Testing mp_list at 2015-07-06 23:12:20
+
+"Java is, in many ways, C++-." ~ Michael Feldman
+
+Setting up test environment...
+Compiling...
+================================================================
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:21:36: warning: unused parameter 'other' [-Wunused-parameter]
+dl_list<T>::dl_list(const dl_list& other)
+                                   ^
+include/dl_list.tcc:28:31: warning: unused parameter 'other' [-Wunused-parameter]
+dl_list<T>::dl_list(dl_list&& other)
+                              ^
+include/dl_list.tcc:34:43: warning: unused parameter 'rhs' [-Wunused-parameter]
+dl_list<T>& dl_list<T>::operator=(dl_list rhs)
+                                          ^
+include/dl_list.tcc:40:32: warning: unused parameter 'other' [-Wunused-parameter]
+void dl_list<T>::swap(dl_list& other)
+                               ^
+include/dl_list.tcc:46:30: warning: unused parameter 'data' [-Wunused-parameter]
+void dl_list<T>::push_back(T data)
+                             ^
+include/dl_list.tcc:52:31: warning: unused parameter 'data' [-Wunused-parameter]
+void dl_list<T>::push_front(T data)
+                              ^
+include/dl_list.tcc:64:49: warning: unused parameter 'first' [-Wunused-parameter]
+void dl_list<T>::reverse(std::unique_ptr<node>& first, node*& last)
+                                                ^
+include/dl_list.tcc:64:63: warning: unused parameter 'last' [-Wunused-parameter]
+void dl_list<T>::reverse(std::unique_ptr<node>& first, node*& last)
+                                                              ^
+include/dl_list.tcc:70:39: warning: unused parameter 'n' [-Wunused-parameter]
+void dl_list<T>::reverse_nth(unsigned n)
+                                      ^
+include/dl_list.tcc:113:30: warning: unused parameter 'start' [-Wunused-parameter]
+auto dl_list<T>::split(node* start, unsigned split_point)
+                             ^
+include/dl_list.tcc:134:46: warning: unused parameter 'first' [-Wunused-parameter]
+auto dl_list<T>::merge(std::unique_ptr<node> first,
+                                             ^
+include/dl_list.tcc:135:46: warning: unused parameter 'second' [-Wunused-parameter]
+                       std::unique_ptr<node> second) -> std::unique_ptr<node>
+                                             ^
+include/dl_list.tcc:152:50: warning: unused parameter 'start' [-Wunused-parameter]
+auto dl_list<T>::mergesort(std::unique_ptr<node> start, uint64_t length)
+                                                 ^
+include/dl_list.tcc:152:66: warning: unused parameter 'length' [-Wunused-parameter]
+auto dl_list<T>::mergesort(std::unique_ptr<node> start, uint64_t length)
+                                                                 ^
+include/dl_list.tcc:118:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+include/dl_list.tcc:95:21: note: in instantiation of member function 'cs225::dl_list<int>::split' requested here
+    auto new_head = split(head_.get(), split_point);
+                    ^
+unit_tests.cpp:462:31: note: in instantiation of member function 'cs225::dl_list<int>::split' requested here
+    dl_list<int> split = list.split(3);
+                              ^
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+include/dl_list.tcc:123:13: note: in instantiation of member function 'cs225::dl_list<int>::merge' requested here
+    head_ = merge(std::move(head_), std::move(to_merge.head_));
+            ^
+unit_tests.cpp:521:15: note: in instantiation of member function 'cs225::dl_list<int>::merge' requested here
+    firstlist.merge(secondlist);
+              ^
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:156:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+include/dl_list.tcc:146:13: note: in instantiation of member function 'cs225::dl_list<int>::mergesort' requested here
+    head_ = mergesort(std::move(head_), size_);
+            ^
+unit_tests.cpp:555:10: note: in instantiation of member function 'cs225::dl_list<int>::sort' requested here
+    list.sort();
+         ^
+17 warnings generated.
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:21:36: warning: unused parameter 'other' [-Wunused-parameter]
+dl_list<T>::dl_list(const dl_list& other)
+                                   ^
+include/dl_list.tcc:28:31: warning: unused parameter 'other' [-Wunused-parameter]
+dl_list<T>::dl_list(dl_list&& other)
+                              ^
+include/dl_list.tcc:34:43: warning: unused parameter 'rhs' [-Wunused-parameter]
+dl_list<T>& dl_list<T>::operator=(dl_list rhs)
+                                          ^
+include/dl_list.tcc:40:32: warning: unused parameter 'other' [-Wunused-parameter]
+void dl_list<T>::swap(dl_list& other)
+                               ^
+include/dl_list.tcc:46:30: warning: unused parameter 'data' [-Wunused-parameter]
+void dl_list<T>::push_back(T data)
+                             ^
+include/dl_list.tcc:52:31: warning: unused parameter 'data' [-Wunused-parameter]
+void dl_list<T>::push_front(T data)
+                              ^
+include/dl_list.tcc:64:49: warning: unused parameter 'first' [-Wunused-parameter]
+void dl_list<T>::reverse(std::unique_ptr<node>& first, node*& last)
+                                                ^
+include/dl_list.tcc:64:63: warning: unused parameter 'last' [-Wunused-parameter]
+void dl_list<T>::reverse(std::unique_ptr<node>& first, node*& last)
+                                                              ^
+include/dl_list.tcc:70:39: warning: unused parameter 'n' [-Wunused-parameter]
+void dl_list<T>::reverse_nth(unsigned n)
+                                      ^
+include/dl_list.tcc:113:30: warning: unused parameter 'start' [-Wunused-parameter]
+auto dl_list<T>::split(node* start, unsigned split_point)
+                             ^
+include/dl_list.tcc:134:46: warning: unused parameter 'first' [-Wunused-parameter]
+auto dl_list<T>::merge(std::unique_ptr<node> first,
+                                             ^
+include/dl_list.tcc:135:46: warning: unused parameter 'second' [-Wunused-parameter]
+                       std::unique_ptr<node> second) -> std::unique_ptr<node>
+                                             ^
+include/dl_list.tcc:152:50: warning: unused parameter 'start' [-Wunused-parameter]
+auto dl_list<T>::mergesort(std::unique_ptr<node> start, uint64_t length)
+                                                 ^
+include/dl_list.tcc:152:66: warning: unused parameter 'length' [-Wunused-parameter]
+auto dl_list<T>::mergesort(std::unique_ptr<node> start, uint64_t length)
+                                                                 ^
+include/dl_list.tcc:118:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+include/dl_list.tcc:95:21: note: in instantiation of member function 'cs225::dl_list<int>::split' requested here
+    auto new_head = split(head_.get(), split_point);
+                    ^
+unit_tests.cpp:462:31: note: in instantiation of member function 'cs225::dl_list<int>::split' requested here
+    dl_list<int> split = list.split(3);
+                              ^
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+include/dl_list.tcc:123:13: note: in instantiation of member function 'cs225::dl_list<int>::merge' requested here
+    head_ = merge(std::move(head_), std::move(to_merge.head_));
+            ^
+unit_tests.cpp:521:15: note: in instantiation of member function 'cs225::dl_list<int>::merge' requested here
+    firstlist.merge(secondlist);
+              ^
+In file included from unit_tests.cpp:15:
+In file included from include/dl_list.h:263:
+include/dl_list.tcc:156:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+include/dl_list.tcc:146:13: note: in instantiation of member function 'cs225::dl_list<int>::mergesort' requested here
+    head_ = mergesort(std::move(head_), size_);
+            ^
+unit_tests.cpp:555:10: note: in instantiation of member function 'cs225::dl_list<int>::sort' requested here
+    list.sort();
+         ^
+17 warnings generated.
+
+
+Running tests...
+================================================================
+test_push_front . . . . . . . . . . [2 pts]  - FAILED: unit_tests.cpp:95: List does not match solution's size
+test_push_back  . . . . . . . . . . [2 pts]  - FAILED: unit_tests.cpp:95: List does not match solution's size
+test_dtor_10 (asan) . . . . . . . . [3 pts]  - FAILED: Memory errors detected by ASAN
+test_dtor_37 (asan) . . . . . . . . [3 pts]  - FAILED: Memory errors detected by ASAN
+test_reverse_20_size  . . . . . . . [1 pts]  - FAILED: unit_tests.cpp:95: List does not match solution's size
+test_reverse_20_forward . . . . . . [1 pts]  - FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+test_reverse_20_backward  . . . . . [1 pts]  - FAILED: Segmentation fault
+test_reverse_37_size  . . . . . . . [1 pts]  - FAILED: unit_tests.cpp:95: List does not match solution's size
+test_reverse_37_forward . . . . . . [1 pts]  - FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+test_reverse_37_backward  . . . . . [1 pts]  - FAILED: Segmentation fault
+test_reverse_empty (asan) . . . . . [1 pts]  - FAILED: Memory errors detected by ASAN
+test_reverse_20_memory (asan) . . . [1 pts]  - FAILED: Memory errors detected by ASAN
+test_reverse_nth_20_2_size  . . . . [1 pts]  - FAILED: unit_tests.cpp:95: List does not match solution's size
+test_reverse_nth_20_2_forward . . . [1 pts]  - FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+test_reverse_nth_20_2_backward  . . [1 pts]  - FAILED: Segmentation fault
+test_reverse_nth_37_4_size  . . . . [1 pts]  - FAILED: unit_tests.cpp:95: List does not match solution's size
+test_reverse_nth_37_4_forward . . . [1 pts]  - FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+test_reverse_nth_37_4_backward  . . [1 pts]  - FAILED: Segmentation fault
+test_reverse_nth_37_37  . . . . . . [1 pts]  - FAILED: Segmentation fault
+test_reverse_nth_37_4_memory (asan) [1 pts]  - FAILED: Memory errors detected by ASAN
+test_reverse_nth_empty (asan) . . . [1 pts]  - FAILED: Memory errors detected by ASAN
+test_waterfall_4_size . . . . . . . [1 pts]  - FAILED: unit_tests.cpp:95: List does not match solution's size
+test_waterfall_4_forward  . . . . . [1 pts]  - FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+test_waterfall_4_backward . . . . . [2 pts]  - FAILED: Segmentation fault
+test_waterfall_7_size . . . . . . . [1 pts]  - FAILED: unit_tests.cpp:95: List does not match solution's size
+test_waterfall_7_forward  . . . . . [1 pts]  - FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+test_waterfall_7_backward . . . . . [2 pts]  - FAILED: Segmentation fault
+testWaterfall12_size  . . . . . . . [1 pts]  - FAILED: unit_tests.cpp:95: List does not match solution's size
+testWaterfall12_forward . . . . . . [1 pts]  - FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+testWaterfall12_backward  . . . . . [2 pts]  - FAILED: Segmentation fault
+test_waterfall_7_memory (asan)  . . [3 pts]  - FAILED: Memory errors detected by ASAN
+test_waterfall_empty (asan) . . . . [3 pts]  - FAILED: unit_tests.cpp:95: List does not match solution's size
+test_split_5_this_size  . . . . . . [1 pts]  - FAILED: Aborted
+test_split_5_this_forward . . . . . [1 pts]  - FAILED: Aborted
+test_split_5_this_backward  . . . . [1 pts]  - FAILED: Aborted
+test_split_5_split_size . . . . . . [1 pts]  - FAILED: Aborted
+test_split_5_split_forward  . . . . [1 pts]  - FAILED: Aborted
+test_split_5_split_backward . . . . [1 pts]  - FAILED: Aborted
+test_split_5_mem (asan) . . . . . . [3 pts]  - FAILED: Aborted
+test_merge_size . . . . . . . . . . [1 pts]  - FAILED: Segmentation fault
+test_merge_forward  . . . . . . . . [1 pts]  - FAILED: Segmentation fault
+test_merge_backward . . . . . . . . [1 pts]  - FAILED: Segmentation fault
+test_merge_mem (asan) . . . . . . . [3 pts]  - FAILED: Segmentation fault
+test_sort_16p_s . . . . . . . . . . [1 pts]  - FAILED: unit_tests.cpp:95: List does not match solution's size
+test_sort_16p_f . . . . . . . . . . [2 pts]  - FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+test_sort_16p_b . . . . . . . . . . [2 pts]  - FAILED: unit_tests.cpp:99: List does not match solution with backward traversal
+test_sort_20p_s . . . . . . . . . . [1 pts]  - FAILED: unit_tests.cpp:95: List does not match solution's size
+test_sort_20p_f . . . . . . . . . . [2 pts]  - FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+test_sort_20p_b . . . . . . . . . . [2 pts]  - FAILED: unit_tests.cpp:99: List does not match solution with backward traversal
+test_sort_27p_s . . . . . . . . . . [1 pts]  - FAILED: unit_tests.cpp:95: List does not match solution's size
+test_sort_27p_f . . . . . . . . . . [2 pts]  - FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+test_sort_27p_b . . . . . . . . . . [2 pts]  - FAILED: unit_tests.cpp:99: List does not match solution with backward traversal
+test_sort_empty . . . . . . . . . . [5 pts]  - FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+test_sort_259p_s  . . . . . . . . . [1 pts]  - FAILED: unit_tests.cpp:614: push_back did not insert all values
+test_sort_259p_f  . . . . . . . . . [2 pts]  - FAILED: unit_tests.cpp:614: push_back did not insert all values
+test_sort_259p_b  . . . . . . . . . [2 pts]  - FAILED: unit_tests.cpp:614: push_back did not insert all values
+test_sort_memory (asan) . . . . . . [5 pts]  - FAILED: unit_tests.cpp:614: push_back did not insert all values
+test_sort_nlogn . . . . . . . . . . [10 pts] - FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+
+
+
+Detailed test output...
+================================================================
+----------------------------------------------------------------
+test_push_front [2 points]
+Result: FAILED: unit_tests.cpp:95: List does not match solution's size
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_push_back [2 points]
+Result: FAILED: unit_tests.cpp:95: List does not match solution's size
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_dtor_10 (run under asan) [3 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (2000ms timeout)
+Output:
+----------------------------------------------------------------
+Running test_dtor_10 [worth 3 points, output below]
+< >
+
+=================================================================
+==4423==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x42289b in operator new(unsigned long) /dev/shm/225/lm35/src/llvm/projects/compiler-rt/lib/asan/asan_new_delete.cc:62:35
+    #1 0x4cdb45 in proxy_test::test_dtor_10(util::sizedpipestream<512ul>&) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:194:5
+    #2 0x4ac0fa in proxy::test_execution::child_test() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:597:3
+    #3 0x4aa165 in proxy::test_execution::child() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:479:10
+    #4 0x4a9a6e in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:269:10
+    #5 0x4a8ce3 in proxy::RunTests::run_single_test(char const*) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:254:11
+    #6 0x4a89e6 in proxy::RunTests::execute_by_mode() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:239:10
+    #7 0x4a7ffa in proxy::RunTests::execute() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:230:24
+    #8 0x3db8a1ed5c in __libc_start_main (/lib64/libc.so.6+0x3db8a1ed5c)
+
+SUMMARY: AddressSanitizer: 24 byte(s) leaked in 1 allocation(s).
+Result: FAILED:
+Memory Leaks Detected by ASAN
+
+----------------------------------------------------------------
+test_dtor_37 (run under asan) [3 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (2000ms timeout)
+Output:
+----------------------------------------------------------------
+Running test_dtor_37 [worth 3 points, output below]
+=================================================================
+==4429==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7fff46c624e8 at pc 0x0000004da2f0 bp 0x7fff46c62080 sp 0x7fff46c62078
+READ of size 8 at 0x7fff46c624e8 thread T0
+    #0 0x4da2ef in cs225::dl_list<int>::reverse_iterator::operator++() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/include/dl_list_provided.tcc:170:5
+    #1 0x4d2077 in std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::difference_type std::__1::__distance<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, cs225::dl_list<int>::reverse_iterator, std::__1::input_iterator_tag) /class/cs225/lm35/bin/../include/c++/v1/iterator:488:31
+    #2 0x4d2077 in std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::difference_type std::__1::distance<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, cs225::dl_list<int>::reverse_iterator) /class/cs225/lm35/bin/../include/c++/v1/iterator:506
+    #3 0x4d2077 in std::__1::vector<int, std::__1::allocator<int> >::vector<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, std::__1::enable_if<(__is_forward_iterator<cs225::dl_list<int>::reverse_iterator>::value) && (is_constructible<int, std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::reference>::value), cs225::dl_list<int>::reverse_iterator>::type) /class/cs225/lm35/bin/../include/c++/v1/vector:1168
+    #4 0x4cca34 in checkList(cs225::dl_list<int> const&, std::__1::vector<int, std::__1::allocator<int> > const&, check_t) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:73:26
+    #5 0x4ccdbd in assertListEquals(cs225::dl_list<int> const&, std::__1::vector<int, std::__1::allocator<int> > const&, check_t) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:92:39
+    #6 0x4cdfd0 in proxy_test::test_dtor_37(util::sizedpipestream<512ul>&) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:214:5
+    #7 0x4ac0fa in proxy::test_execution::child_test() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:597:3
+    #8 0x4aa165 in proxy::test_execution::child() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:479:10
+    #9 0x4a9a6e in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:269:10
+    #10 0x4a8ce3 in proxy::RunTests::run_single_test(char const*) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:254:11
+    #11 0x4a89e6 in proxy::RunTests::execute_by_mode() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:239:10
+    #12 0x4a7ffa in proxy::RunTests::execute() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:230:24
+    #13 0x4a7b49 in main /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:117:9
+    #14 0x3db8a1ed5c in __libc_start_main (/lib64/libc.so.6+0x3db8a1ed5c)
+    #15 0x4a730c in _start (/dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy-asan+0x4a730c)
+
+Address 0x7fff46c624e8 is located in stack of thread T0 at offset 136 in frame
+    #0 0x4cddbf in proxy_test::test_dtor_37(util::sizedpipestream<512ul>&) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:206
+
+  This frame has 3 object(s):
+    [32, 56) 'list'
+    [96, 120) 'soln' <== Memory access at offset 136 overflows this variable
+    [160, 164) '' <== Memory access at offset 136 underflows this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism or swapcontext
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-overflow /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/include/dl_list_provided.tcc:170 cs225::dl_list<int>::reverse_iterator::operator++()
+Shadow bytes around the buggy address:
+  0x100068d84440: 00 00 00 f3 f3 f3 f3 f3 00 00 00 00 00 00 00 00
+  0x100068d84450: 00 00 00 00 00 00 00 00 f1 f1 f1 f1 00 f2 f2 f2
+  0x100068d84460: 00 00 00 f2 f2 f2 f2 f2 00 00 00 f2 f2 f2 f2 f2
+  0x100068d84470: 00 00 00 f3 f3 f3 f3 f3 00 00 00 00 00 00 00 00
+  0x100068d84480: 00 00 00 00 00 00 00 00 00 00 00 00 f1 f1 f1 f1
+=>0x100068d84490: 00 00 00 f2 f2 f2 f2 f2 00 00 00 f2 f2[f2]f2 f2
+  0x100068d844a0: 04 f3 f3 f3 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100068d844b0: 00 00 00 00 f1 f1 f1 f1 00 f2 f2 f2 00 00 00 f3
+  0x100068d844c0: f3 f3 f3 f3 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100068d844d0: f1 f1 f1 f1 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100068d844e0: 00 00 00 00 00 00 00 f3 f3 f3 f3 f3 f3 f3 f3 f3
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Heap right redzone:      fb
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack partial redzone:   f4
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  ASan internal:           fe
+==4429==ABORTING
+Result: FAILED:
+Memory Errors Detected by ASAN
+
+----------------------------------------------------------------
+test_reverse_20_size [1 points]
+Result: FAILED: unit_tests.cpp:95: List does not match solution's size
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_reverse_20_forward [1 points]
+Result: FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_reverse_20_backward [1 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_reverse_37_size [1 points]
+Result: FAILED: unit_tests.cpp:95: List does not match solution's size
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_reverse_37_forward [1 points]
+Result: FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_reverse_37_backward [1 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_reverse_empty (run under asan) [1 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running test_reverse_empty [worth 1 points, output below]
+ASAN:SIGSEGV
+=================================================================
+==4440==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000004da2cf bp 0x7fffbe4c0a30 sp 0x7fffbe4c0950 T0)
+    #0 0x4da2ce in cs225::dl_list<int>::reverse_iterator::operator++() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/include/dl_list_provided.tcc:170:5
+    #1 0x4d2077 in std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::difference_type std::__1::__distance<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, cs225::dl_list<int>::reverse_iterator, std::__1::input_iterator_tag) /class/cs225/lm35/bin/../include/c++/v1/iterator:488:31
+    #2 0x4d2077 in std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::difference_type std::__1::distance<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, cs225::dl_list<int>::reverse_iterator) /class/cs225/lm35/bin/../include/c++/v1/iterator:506
+    #3 0x4d2077 in std::__1::vector<int, std::__1::allocator<int> >::vector<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, std::__1::enable_if<(__is_forward_iterator<cs225::dl_list<int>::reverse_iterator>::value) && (is_constructible<int, std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::reference>::value), cs225::dl_list<int>::reverse_iterator>::type) /class/cs225/lm35/bin/../include/c++/v1/vector:1168
+    #4 0x4cca34 in checkList(cs225::dl_list<int> const&, std::__1::vector<int, std::__1::allocator<int> > const&, check_t) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:73:26
+    #5 0x4ccdbd in assertListEquals(cs225::dl_list<int> const&, std::__1::vector<int, std::__1::allocator<int> > const&, check_t) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:92:39
+    #6 0x4ce32d in testReverse(int, check_t, bool) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:230:5
+    #7 0x4cea24 in proxy_test::test_reverse_empty(util::sizedpipestream<512ul>&) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:291:5
+    #8 0x4ac0fa in proxy::test_execution::child_test() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:597:3
+    #9 0x4aa165 in proxy::test_execution::child() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:479:10
+    #10 0x4a9a6e in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:269:10
+    #11 0x4a8ce3 in proxy::RunTests::run_single_test(char const*) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:254:11
+    #12 0x4a89e6 in proxy::RunTests::execute_by_mode() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:239:10
+    #13 0x4a7ffa in proxy::RunTests::execute() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:230:24
+    #14 0x4a7b49 in main /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:117:9
+    #15 0x3db8a1ed5c in __libc_start_main (/lib64/libc.so.6+0x3db8a1ed5c)
+    #16 0x4a730c in _start (/dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy-asan+0x4a730c)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/include/dl_list_provided.tcc:170 cs225::dl_list<int>::reverse_iterator::operator++()
+==4440==ABORTING
+Result: FAILED:
+Memory Errors Detected by ASAN
+
+----------------------------------------------------------------
+test_reverse_20_memory (run under asan) [1 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running test_reverse_20_memory [worth 1 points, output below]
+ASAN:SIGSEGV
+=================================================================
+==4445==ERROR: AddressSanitizer: SEGV on unknown address 0x0000900361e1 (pc 0x0000004da2cf bp 0x7fff1dd4b310 sp 0x7fff1dd4b230 T0)
+    #0 0x4da2ce in cs225::dl_list<int>::reverse_iterator::operator++() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/include/dl_list_provided.tcc:170:5
+    #1 0x4d2077 in std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::difference_type std::__1::__distance<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, cs225::dl_list<int>::reverse_iterator, std::__1::input_iterator_tag) /class/cs225/lm35/bin/../include/c++/v1/iterator:488:31
+    #2 0x4d2077 in std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::difference_type std::__1::distance<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, cs225::dl_list<int>::reverse_iterator) /class/cs225/lm35/bin/../include/c++/v1/iterator:506
+    #3 0x4d2077 in std::__1::vector<int, std::__1::allocator<int> >::vector<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, std::__1::enable_if<(__is_forward_iterator<cs225::dl_list<int>::reverse_iterator>::value) && (is_constructible<int, std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::reference>::value), cs225::dl_list<int>::reverse_iterator>::type) /class/cs225/lm35/bin/../include/c++/v1/vector:1168
+    #4 0x4cca34 in checkList(cs225::dl_list<int> const&, std::__1::vector<int, std::__1::allocator<int> > const&, check_t) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:73:26
+    #5 0x4ccdbd in assertListEquals(cs225::dl_list<int> const&, std::__1::vector<int, std::__1::allocator<int> > const&, check_t) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:92:39
+    #6 0x4ce32d in testReverse(int, check_t, bool) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:230:5
+    #7 0x4ac0fa in proxy::test_execution::child_test() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:597:3
+    #8 0x4aa165 in proxy::test_execution::child() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:479:10
+    #9 0x4a9a6e in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:269:10
+    #10 0x4a8ce3 in proxy::RunTests::run_single_test(char const*) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:254:11
+    #11 0x4a89e6 in proxy::RunTests::execute_by_mode() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:239:10
+    #12 0x4a7ffa in proxy::RunTests::execute() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:230:24
+    #13 0x4a7b49 in main /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:117:9
+    #14 0x3db8a1ed5c in __libc_start_main (/lib64/libc.so.6+0x3db8a1ed5c)
+    #15 0x4a730c in _start (/dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy-asan+0x4a730c)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/include/dl_list_provided.tcc:170 cs225::dl_list<int>::reverse_iterator::operator++()
+==4445==ABORTING
+Result: FAILED:
+Memory Errors Detected by ASAN
+
+----------------------------------------------------------------
+test_reverse_nth_20_2_size [1 points]
+Result: FAILED: unit_tests.cpp:95: List does not match solution's size
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_reverse_nth_20_2_forward [1 points]
+Result: FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_reverse_nth_20_2_backward [1 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_reverse_nth_37_4_size [1 points]
+Result: FAILED: unit_tests.cpp:95: List does not match solution's size
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_reverse_nth_37_4_forward [1 points]
+Result: FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_reverse_nth_37_4_backward [1 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_reverse_nth_37_37 [1 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_reverse_nth_37_4_memory (run under asan) [1 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running test_reverse_nth_37_4_memory [worth 1 points, output below]
+ASAN:SIGSEGV
+=================================================================
+==4457==ERROR: AddressSanitizer: SEGV on unknown address 0x0000900361e1 (pc 0x0000004da2cf bp 0x7fff10889310 sp 0x7fff10889230 T0)
+    #0 0x4da2ce in cs225::dl_list<int>::reverse_iterator::operator++() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/include/dl_list_provided.tcc:170:5
+    #1 0x4d2077 in std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::difference_type std::__1::__distance<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, cs225::dl_list<int>::reverse_iterator, std::__1::input_iterator_tag) /class/cs225/lm35/bin/../include/c++/v1/iterator:488:31
+    #2 0x4d2077 in std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::difference_type std::__1::distance<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, cs225::dl_list<int>::reverse_iterator) /class/cs225/lm35/bin/../include/c++/v1/iterator:506
+    #3 0x4d2077 in std::__1::vector<int, std::__1::allocator<int> >::vector<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, std::__1::enable_if<(__is_forward_iterator<cs225::dl_list<int>::reverse_iterator>::value) && (is_constructible<int, std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::reference>::value), cs225::dl_list<int>::reverse_iterator>::type) /class/cs225/lm35/bin/../include/c++/v1/vector:1168
+    #4 0x4cca34 in checkList(cs225::dl_list<int> const&, std::__1::vector<int, std::__1::allocator<int> > const&, check_t) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:73:26
+    #5 0x4ccdbd in assertListEquals(cs225::dl_list<int> const&, std::__1::vector<int, std::__1::allocator<int> > const&, check_t) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:92:39
+    #6 0x4ce84a in testReverseNth(int, int, check_t, bool) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:259:5
+    #7 0x4ac0fa in proxy::test_execution::child_test() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:597:3
+    #8 0x4aa165 in proxy::test_execution::child() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:479:10
+    #9 0x4a9a6e in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:269:10
+    #10 0x4a8ce3 in proxy::RunTests::run_single_test(char const*) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:254:11
+    #11 0x4a89e6 in proxy::RunTests::execute_by_mode() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:239:10
+    #12 0x4a7ffa in proxy::RunTests::execute() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:230:24
+    #13 0x4a7b49 in main /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:117:9
+    #14 0x3db8a1ed5c in __libc_start_main (/lib64/libc.so.6+0x3db8a1ed5c)
+    #15 0x4a730c in _start (/dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy-asan+0x4a730c)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/include/dl_list_provided.tcc:170 cs225::dl_list<int>::reverse_iterator::operator++()
+==4457==ABORTING
+Result: FAILED:
+Memory Errors Detected by ASAN
+
+----------------------------------------------------------------
+test_reverse_nth_empty (run under asan) [1 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running test_reverse_nth_empty [worth 1 points, output below]
+ASAN:SIGSEGV
+=================================================================
+==4462==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000004da2cf bp 0x7fffdb40c490 sp 0x7fffdb40c3b0 T0)
+    #0 0x4da2ce in cs225::dl_list<int>::reverse_iterator::operator++() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/include/dl_list_provided.tcc:170:5
+    #1 0x4d2077 in std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::difference_type std::__1::__distance<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, cs225::dl_list<int>::reverse_iterator, std::__1::input_iterator_tag) /class/cs225/lm35/bin/../include/c++/v1/iterator:488:31
+    #2 0x4d2077 in std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::difference_type std::__1::distance<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, cs225::dl_list<int>::reverse_iterator) /class/cs225/lm35/bin/../include/c++/v1/iterator:506
+    #3 0x4d2077 in std::__1::vector<int, std::__1::allocator<int> >::vector<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, std::__1::enable_if<(__is_forward_iterator<cs225::dl_list<int>::reverse_iterator>::value) && (is_constructible<int, std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::reference>::value), cs225::dl_list<int>::reverse_iterator>::type) /class/cs225/lm35/bin/../include/c++/v1/vector:1168
+    #4 0x4cca34 in checkList(cs225::dl_list<int> const&, std::__1::vector<int, std::__1::allocator<int> > const&, check_t) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:73:26
+    #5 0x4ccdbd in assertListEquals(cs225::dl_list<int> const&, std::__1::vector<int, std::__1::allocator<int> > const&, check_t) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:92:39
+    #6 0x4ce84a in testReverseNth(int, int, check_t, bool) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:259:5
+    #7 0x4ceb79 in proxy_test::test_reverse_nth_empty(util::sizedpipestream<512ul>&) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:336:5
+    #8 0x4ac0fa in proxy::test_execution::child_test() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:597:3
+    #9 0x4aa165 in proxy::test_execution::child() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:479:10
+    #10 0x4a9a6e in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:269:10
+    #11 0x4a8ce3 in proxy::RunTests::run_single_test(char const*) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:254:11
+    #12 0x4a89e6 in proxy::RunTests::execute_by_mode() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:239:10
+    #13 0x4a7ffa in proxy::RunTests::execute() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:230:24
+    #14 0x4a7b49 in main /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:117:9
+    #15 0x3db8a1ed5c in __libc_start_main (/lib64/libc.so.6+0x3db8a1ed5c)
+    #16 0x4a730c in _start (/dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy-asan+0x4a730c)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/include/dl_list_provided.tcc:170 cs225::dl_list<int>::reverse_iterator::operator++()
+==4462==ABORTING
+Result: FAILED:
+Memory Errors Detected by ASAN
+
+----------------------------------------------------------------
+test_waterfall_4_size [1 points]
+Result: FAILED: unit_tests.cpp:95: List does not match solution's size
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_waterfall_4_forward [1 points]
+Result: FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_waterfall_4_backward [2 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_waterfall_7_size [1 points]
+Result: FAILED: unit_tests.cpp:95: List does not match solution's size
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_waterfall_7_forward [1 points]
+Result: FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_waterfall_7_backward [2 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testWaterfall12_size [1 points]
+Result: FAILED: unit_tests.cpp:95: List does not match solution's size
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+testWaterfall12_forward [1 points]
+Result: FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+testWaterfall12_backward [2 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_waterfall_7_memory (run under asan) [3 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running test_waterfall_7_memory [worth 3 points, output below]
+ASAN:SIGSEGV
+=================================================================
+==4476==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000004da2cf bp 0x7fffd15e5510 sp 0x7fffd15e5430 T0)
+    #0 0x4da2ce in cs225::dl_list<int>::reverse_iterator::operator++() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/include/dl_list_provided.tcc:170:5
+    #1 0x4d2077 in std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::difference_type std::__1::__distance<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, cs225::dl_list<int>::reverse_iterator, std::__1::input_iterator_tag) /class/cs225/lm35/bin/../include/c++/v1/iterator:488:31
+    #2 0x4d2077 in std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::difference_type std::__1::distance<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, cs225::dl_list<int>::reverse_iterator) /class/cs225/lm35/bin/../include/c++/v1/iterator:506
+    #3 0x4d2077 in std::__1::vector<int, std::__1::allocator<int> >::vector<cs225::dl_list<int>::reverse_iterator>(cs225::dl_list<int>::reverse_iterator, std::__1::enable_if<(__is_forward_iterator<cs225::dl_list<int>::reverse_iterator>::value) && (is_constructible<int, std::__1::iterator_traits<cs225::dl_list<int>::reverse_iterator>::reference>::value), cs225::dl_list<int>::reverse_iterator>::type) /class/cs225/lm35/bin/../include/c++/v1/vector:1168
+    #4 0x4cca34 in checkList(cs225::dl_list<int> const&, std::__1::vector<int, std::__1::allocator<int> > const&, check_t) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:73:26
+    #5 0x4ccdbd in assertListEquals(cs225::dl_list<int> const&, std::__1::vector<int, std::__1::allocator<int> > const&, check_t) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:92:39
+    #6 0x4cf169 in testWaterfall7(check_t, bool) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/unit_tests.cpp:366:5
+    #7 0x4ac0fa in proxy::test_execution::child_test() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:597:3
+    #8 0x4aa165 in proxy::test_execution::child() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:479:10
+    #9 0x4a9a6e in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:269:10
+    #10 0x4a8ce3 in proxy::RunTests::run_single_test(char const*) /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:254:11
+    #11 0x4a89e6 in proxy::RunTests::execute_by_mode() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:239:10
+    #12 0x4a7ffa in proxy::RunTests::execute() /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:230:24
+    #13 0x4a7b49 in main /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy.cpp:117:9
+    #14 0x3db8a1ed5c in __libc_start_main (/lib64/libc.so.6+0x3db8a1ed5c)
+    #15 0x4a730c in _start (/dev/shm/cs225student/autograder/monad/monad/mp_list_grade/proxy-asan+0x4a730c)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /dev/shm/cs225student/autograder/monad/monad/mp_list_grade/include/dl_list_provided.tcc:170 cs225::dl_list<int>::reverse_iterator::operator++()
+==4476==ABORTING
+Result: FAILED:
+Memory Errors Detected by ASAN
+
+----------------------------------------------------------------
+test_waterfall_empty (run under asan) [3 points]
+Result: FAILED: unit_tests.cpp:95: List does not match solution's size
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running test_waterfall_empty [worth 3 points, output below]
+< >
+Result: FAILED:
+unit_tests.cpp:95: List does not match solution's size
+
+----------------------------------------------------------------
+test_split_5_this_size [1 points]
+Result: FAILED: Aborted
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+proxy: include/dl_list.tcc:116: std::unique_ptr<node> cs225::dl_list<int>::split(cs225::dl_list::node *, unsigned int) [T = int]: Assertion `split_point > 0' failed.
+
+----------------------------------------------------------------
+test_split_5_this_forward [1 points]
+Result: FAILED: Aborted
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+proxy: include/dl_list.tcc:116: std::unique_ptr<node> cs225::dl_list<int>::split(cs225::dl_list::node *, unsigned int) [T = int]: Assertion `split_point > 0' failed.
+
+----------------------------------------------------------------
+test_split_5_this_backward [1 points]
+Result: FAILED: Aborted
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+proxy: include/dl_list.tcc:116: std::unique_ptr<node> cs225::dl_list<int>::split(cs225::dl_list::node *, unsigned int) [T = int]: Assertion `split_point > 0' failed.
+
+----------------------------------------------------------------
+test_split_5_split_size [1 points]
+Result: FAILED: Aborted
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+proxy: include/dl_list.tcc:116: std::unique_ptr<node> cs225::dl_list<int>::split(cs225::dl_list::node *, unsigned int) [T = int]: Assertion `split_point > 0' failed.
+
+----------------------------------------------------------------
+test_split_5_split_forward [1 points]
+Result: FAILED: Aborted
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+proxy: include/dl_list.tcc:116: std::unique_ptr<node> cs225::dl_list<int>::split(cs225::dl_list::node *, unsigned int) [T = int]: Assertion `split_point > 0' failed.
+
+----------------------------------------------------------------
+test_split_5_split_backward [1 points]
+Result: FAILED: Aborted
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+proxy: include/dl_list.tcc:116: std::unique_ptr<node> cs225::dl_list<int>::split(cs225::dl_list::node *, unsigned int) [T = int]: Assertion `split_point > 0' failed.
+
+----------------------------------------------------------------
+test_split_5_mem (run under asan) [3 points]
+Result: FAILED: Aborted
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running test_split_5_mem [worth 3 points, output below]
+proxy-asan: include/dl_list.tcc:116: std::unique_ptr<node> cs225::dl_list<int>::split(cs225::dl_list::node *, unsigned int) [T = int]: Assertion `split_point > 0' failed.
+Result: FAILED:
+Aborted
+
+----------------------------------------------------------------
+test_merge_size [1 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_merge_forward [1 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_merge_backward [1 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_merge_mem (run under asan) [3 points]
+Result: FAILED: Segmentation fault
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running test_merge_mem [worth 3 points, output below]
+ASAN:SIGSEGV
+=================================================================
+==4499==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x00000049b807 bp 0x7fff0fcc1d48 sp 0x7fff0fcc1aa8 T0)
+Result: FAILED:
+Segmentation fault
+
+----------------------------------------------------------------
+test_sort_16p_s [1 points]
+Result: FAILED: unit_tests.cpp:95: List does not match solution's size
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_sort_16p_f [2 points]
+Result: FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_sort_16p_b [2 points]
+Result: FAILED: unit_tests.cpp:99: List does not match solution with backward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_sort_20p_s [1 points]
+Result: FAILED: unit_tests.cpp:95: List does not match solution's size
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_sort_20p_f [2 points]
+Result: FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_sort_20p_b [2 points]
+Result: FAILED: unit_tests.cpp:99: List does not match solution with backward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_sort_27p_s [1 points]
+Result: FAILED: unit_tests.cpp:95: List does not match solution's size
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_sort_27p_f [2 points]
+Result: FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_sort_27p_b [2 points]
+Result: FAILED: unit_tests.cpp:99: List does not match solution with backward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_sort_empty [5 points]
+Result: FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+test_sort_259p_s [1 points]
+Result: FAILED: unit_tests.cpp:614: push_back did not insert all values
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_sort_259p_f [2 points]
+Result: FAILED: unit_tests.cpp:614: push_back did not insert all values
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_sort_259p_b [2 points]
+Result: FAILED: unit_tests.cpp:614: push_back did not insert all values
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_sort_memory (run under asan) [5 points]
+Result: FAILED: unit_tests.cpp:614: push_back did not insert all values
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running test_sort_memory [worth 5 points, output below]
+Result: FAILED:
+unit_tests.cpp:614: push_back did not insert all values
+
+----------------------------------------------------------------
+test_sort_nlogn [10 points]
+Result: FAILED: unit_tests.cpp:97: List does not match solution with forward traversal
+Took 0ms (20000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+
+----------------------------------------------------------------
+Total score...
+================================================================
+TOTAL SCORE: 0
+

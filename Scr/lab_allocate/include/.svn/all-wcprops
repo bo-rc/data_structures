@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/su15-cs225/!svn/ver/1174/boliu1/lab_allocate/include
+END
+room.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/su15-cs225/!svn/ver/1039/boliu1/lab_allocate/include/room.h
+END
+letter.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/su15-cs225/!svn/ver/1174/boliu1/lab_allocate/include/letter.h
+END
+allocator.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/su15-cs225/!svn/ver/1139/boliu1/lab_allocate/include/allocator.h
+END
+student_list.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/su15-cs225/!svn/ver/1039/boliu1/lab_allocate/include/student_list.h
+END
+fileio.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/su15-cs225/!svn/ver/1039/boliu1/lab_allocate/include/fileio.h
+END
+room_list.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/su15-cs225/!svn/ver/1039/boliu1/lab_allocate/include/room_list.h
+END

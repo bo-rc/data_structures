@@ -1,0 +1,108 @@
+Grading revision r5911 by boliu1, dated 2015-07-18 23:01:09.000382086 -0500 CDT
+Monad Autograder
+Testing lab_huffman at 2015-07-18 23:15:37
+
+"(reading a password) Uppercase 0... [...] Lowercase 0..." ~ Sean Massung
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_encoder_binary_4  . . . . [20 pts] - passed
+test_encoder_binary_8  . . . . [20 pts] - passed
+test_encoder_valgrind_2 (asan) [6 pts]  - passed
+test_encoder_writetree_4 . . . [2 pts]  - passed
+test_encoder_writetree_8 . . . [2 pts]  - passed
+test_decode_4  . . . . . . . . [20 pts] - FAILED: unit_tests.cpp:112: [decoded => eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee] != [expected.str() => aaaabbbbbbbbccccccccccccccccddddddddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+]
+test_decode_8  . . . . . . . . [20 pts] - FAILED: unit_tests.cpp:124: [decoded => eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee] != [expected.str() => aaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+]
+test_decode_readtree_4 . . . . [2 pts]  - FAILED: unit_tests.cpp:137: [decoded.str() => eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee] != [expected.str() => aaaabbbbbbbbccccccccccccccccddddddddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+]
+test_decode_readtree_8 . . . . [2 pts]  - FAILED: unit_tests.cpp:150: [decoded.str() => eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee] != [expected.str() => aaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+]
+test_the_works (asan)  . . . . [6 pts]  - FAILED: ]
+
+
+Total score...
+================================================================
+TOTAL SCORE: 50
+
+
+
+Detailed test output...
+================================================================
+----------------------------------------------------------------
+test_decode_4 [20 points]
+Result: FAILED: unit_tests.cpp:112: [decoded => eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee] != [expected.str() => aaaabbbbbbbbccccccccccccccccddddddddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+]
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+single_queue: 
+:1 a:4 b:8 c:16 d:32 e:64 
+merge_queue: 
+
+----------------------------------------------------------------
+test_decode_8 [20 points]
+Result: FAILED: unit_tests.cpp:124: [decoded => eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee] != [expected.str() => aaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+]
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+single_queue: 
+:1 a:8 b:16 c:32 d:64 e:128 
+merge_queue: 
+
+----------------------------------------------------------------
+test_decode_readtree_4 [2 points]
+Result: FAILED: unit_tests.cpp:137: [decoded.str() => eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee] != [expected.str() => aaaabbbbbbbbccccccccccccccccddddddddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+]
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_decode_readtree_8 [2 points]
+Result: FAILED: unit_tests.cpp:150: [decoded.str() => eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee] != [expected.str() => aaaaaaaabbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+]
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_the_works (run under asan) [6 points]
+Result: FAILED: ]
+Took unknown time (5000ms timeout)
+Output:
+----------------------------------------------------------------
+Running test_the_works [worth 6 points, output below]
+single_queue: 
+:1 a:2 b:4 c:8 d:16 e:32 
+merge_queue: 
+Printing generated huffman_tree...
+                                                ______________ 63 _____________                                                  
+                                 ______________/                               \______________                                   
+                        ______ 31 _____                                                       e:32                               
+                 ______/               \______                                                                                   
+            __ 15 _                           d:16                                                                               
+         __/       \__                                                                                                           
+       7              c:8                                                                                                        
+     /   \                                                                                                                       
+   3      b:4                                                                                                                    
+  / \                                                                                                                            
+\n:1a:2                                                                                                                          
+Saving huffman_tree to file...
+Result: FAILED:
+unit_tests.cpp:164: [decoded.str() => eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee] != [expected.str() => aabbbbccccccccddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+]
+
+
+----------------------------------------------------------------
+Total score...
+================================================================
+TOTAL SCORE: 50
+

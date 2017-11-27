@@ -1,0 +1,115 @@
+/**
+* @file scoped_ptr_test.cpp
+* @author Chase Geigle
+* @date Summer 2015
+*
+* cs225 MP1
+*
+* Bo Liu (boliu1)
+*/
+
+#include "scoped_ptr.h"
+#include <exception>
+
+namespace cs225
+{
+
+template <class T>
+scoped_ptr<T>::scoped_ptr() : ptr_{nullptr}
+{
+	/* empty */
+}
+
+template <class T>
+scoped_ptr<T>::scoped_ptr(T* rawptr) : ptr_{rawptr}
+{
+	/* empty */
+}
+
+template <class T>
+scoped_ptr<T>::scoped_ptr(scoped_ptr&& other) : ptr_{other.ptr_}
+{
+	other.ptr_ = nullptr;
+}
+
+template <class T>
+scoped_ptr<T>& scoped_ptr<T>::operator=(scoped_ptr&& other)
+{
+	if (ptr_)
+		clear();
+
+	ptr_ = other.ptr_;
+	other.ptr_ = nullptr;
+
+	return *this;
+}
+
+template <class T>
+scoped_ptr<T>::~scoped_ptr()
+{
+	clear();
+}
+
+template <class T>
+void scoped_ptr<T>::clear()
+{
+	delete ptr_;
+	ptr_ = nullptr;
+}
+
+template <class T>
+void scoped_ptr<T>::swap(scoped_ptr<T>& other)
+{
+	auto temp_ptr = ptr_;
+	ptr_ = other.ptr_;
+	other.ptr_ = temp_ptr;
+}
+
+template <class T>
+bool scoped_ptr<T>::empty() const
+{
+	return !ptr_;
+}
+
+template <class T>
+const T& scoped_ptr<T>::operator*() const
+{
+	if (!empty())
+		return *ptr_;
+	else
+		throw std::exception();
+}
+
+template <class T>
+T& scoped_ptr<T>::operator*()
+{
+	if (!empty())
+		return *ptr_;
+	else
+		throw std::exception();
+}
+
+template <class T>
+const T* scoped_ptr<T>::operator->() const
+{
+	return &this->operator*();
+}
+
+template <class T>
+T* scoped_ptr<T>::operator->()
+{
+	return &this->operator*();
+}
+
+template <class T>
+const T* scoped_ptr<T>::get() const
+{
+	return ptr_;
+}
+
+template <class T>
+T* scoped_ptr<T>::get()
+{
+	return ptr_;
+}
+}

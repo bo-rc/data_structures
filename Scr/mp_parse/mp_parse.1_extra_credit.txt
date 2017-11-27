@@ -1,0 +1,265 @@
+Grading revision r3555 by geigle1, dated 2015-07-06 16:07:08.000378124 -0500 CDT
+Monad Autograder
+Testing mp_parse.1 at 2015-07-08 23:12:21
+
+"I have never let my schooling interfere with my education." ~ Mark Twain
+
+Setting up test environment...
+Compiling...
+================================================================
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:116:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:69:16: note: in instantiation of member function 'cs225::circ_array<int>::empty' requested here
+    ASSERT(arr.empty());
+               ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:74:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:73:13: note: in instantiation of member function 'cs225::circ_array<int>::at' requested here
+        arr.at(0) = 1;
+            ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:88:16: note: in instantiation of member function 'cs225::circ_array<int>::size' requested here
+    ASSERT(arr.size() == 2);
+               ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:90:8: note: in instantiation of member function 'cs225::circ_array<int>::operator[]' requested here
+    arr[0] = 1;
+       ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:167:10: note: in instantiation of member function 'cs225::circ_array<int>::operator=' requested here
+    copy = arr;
+         ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:56:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:252:13: note: in instantiation of member function 'cs225::circ_array<int>::operator[]' requested here
+    ASSERT(c[0] == 96);
+            ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:264:14: note: in instantiation of member function 'cs225::circ_array<int>::at' requested here
+    ASSERT(c.at(0) == 47);
+             ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:277:13: note: in instantiation of member function 'cs225::circ_array<char>::operator[]' requested here
+    ASSERT(a[0] == 'd');
+            ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:281:14: note: in instantiation of member function 'cs225::circ_array<char>::size' requested here
+    ASSERT(a.size() == 4);
+             ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:332:15: note: in instantiation of member function 'cs225::circ_array<move_counter>::operator[]' requested here
+    ASSERT(arr[0].moved() > 0);
+              ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:333:16: note: in instantiation of member function 'cs225::circ_array<move_counter>::size' requested here
+    ASSERT(arr.size() == 1);
+               ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+11 warnings generated.
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:116:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:69:16: note: in instantiation of member function 'cs225::circ_array<int>::empty' requested here
+    ASSERT(arr.empty());
+               ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:74:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:73:13: note: in instantiation of member function 'cs225::circ_array<int>::at' requested here
+        arr.at(0) = 1;
+            ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:88:16: note: in instantiation of member function 'cs225::circ_array<int>::size' requested here
+    ASSERT(arr.size() == 2);
+               ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:90:8: note: in instantiation of member function 'cs225::circ_array<int>::operator[]' requested here
+    arr[0] = 1;
+       ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:167:10: note: in instantiation of member function 'cs225::circ_array<int>::operator=' requested here
+    copy = arr;
+         ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:56:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:252:13: note: in instantiation of member function 'cs225::circ_array<int>::operator[]' requested here
+    ASSERT(c[0] == 96);
+            ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:264:14: note: in instantiation of member function 'cs225::circ_array<int>::at' requested here
+    ASSERT(c.at(0) == 47);
+             ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:277:13: note: in instantiation of member function 'cs225::circ_array<char>::operator[]' requested here
+    ASSERT(a[0] == 'd');
+            ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:281:14: note: in instantiation of member function 'cs225::circ_array<char>::size' requested here
+    ASSERT(a.size() == 4);
+             ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:332:15: note: in instantiation of member function 'cs225::circ_array<move_counter>::operator[]' requested here
+    ASSERT(arr[0].moved() > 0);
+              ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:62:
+In file included from include/circ_array.h:165:
+include/circ_array.tcc:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:333:16: note: in instantiation of member function 'cs225::circ_array<move_counter>::size' requested here
+    ASSERT(arr.size() == 1);
+               ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+11 warnings generated.
+
+
+Running tests...
+================================================================
+circ_empty  . . . . . . [3 pts] - FAILED
+circ_sized  . . . . . . [3 pts] - FAILED
+circ_copy_ctor (asan) . [5 pts] - FAILED
+circ_move_ctor (asan) . [5 pts] - FAILED
+circ_copy_assign (asan) [5 pts] - FAILED
+circ_move_assign (asan) [5 pts] - FAILED
+circ_swap . . . . . . . [5 pts] - FAILED
+circ_const_subscript  . [5 pts] - FAILED
+circ_const_at . . . . . [5 pts] - FAILED
+circ_push_front . . . . [5 pts] - FAILED
+circ_push_front_many  . [5 pts] - FAILED
+circ_push_back  . . . . [5 pts] - FAILED
+circ_push_back_many . . [5 pts] - FAILED
+circ_push_front_move  . [5 pts] - FAILED
+circ_push_back_move . . [5 pts] - FAILED
+circ_pop_front  . . . . [5 pts] - FAILED
+circ_pop_back . . . . . [5 pts] - FAILED
+circ_erase_1  . . . . . [8 pts] - FAILED
+circ_erase_2  . . . . . [8 pts] - FAILED
+circ_weird_copy_ctor  . [3 pts] - FAILED
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

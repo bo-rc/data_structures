@@ -1,0 +1,142 @@
+Grading revision r7545 by geigle1, dated 2015-07-31 13:28:45.00058829 -0500 CDT
+Monad Autograder
+Testing mp_graph.2 at 2015-08-02 23:15:09
+
+"**** ******** **** nickels!!!" ~ Chase Geigle
+
+Setting up test environment...
+Compiling...
+================================================================
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:22:10: warning: unused variable 'min_edge' [-Wunused-variable]
+    edge min_edge{g.start_vertex(), g.start_vertex()};
+         ^
+include/tools.tcc:32:38: warning: unused parameter 'g' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                     ^
+include/tools.tcc:32:48: warning: unused parameter 'start' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                               ^
+include/tools.tcc:32:62: warning: unused parameter 'end' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                                             ^
+include/tools.tcc:21:14: warning: unused variable 'min' [-Wunused-variable]
+    weight_t min = std::numeric_limits<weight_t>::max();
+             ^
+unit_tests.cpp:294:19: note: in instantiation of function template specialization 'cs225::tools::min_weight_edge<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    ASSERT(tools::min_weight_edge(g) == 12);
+                  ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:29:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:294:19: note: in instantiation of function template specialization 'cs225::tools::min_weight_edge<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    ASSERT(tools::min_weight_edge(g) == 12);
+                  ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:360:19: note: in instantiation of function template specialization 'cs225::tools::shortest_path_length<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state> > >' requested here
+    ASSERT(tools::shortest_path_length(g, v1, v2) == 1);
+                  ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+include/tools.tcc:40:26: note: in instantiation of function template specialization 'cs225::tools::minimum_spanning_tree<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    for (const auto& e : minimum_spanning_tree(g))
+                         ^
+unit_tests.cpp:434:12: note: in instantiation of function template specialization 'cs225::tools::mark_mst<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    tools::mark_mst(g);
+           ^
+8 warnings generated.
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:22:10: warning: unused variable 'min_edge' [-Wunused-variable]
+    edge min_edge{g.start_vertex(), g.start_vertex()};
+         ^
+include/tools.tcc:32:38: warning: unused parameter 'g' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                     ^
+include/tools.tcc:32:48: warning: unused parameter 'start' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                               ^
+include/tools.tcc:32:62: warning: unused parameter 'end' [-Wunused-parameter]
+uint64_t shortest_path_length(Graph& g, vertex start, vertex end)
+                                                             ^
+include/tools.tcc:21:14: warning: unused variable 'min' [-Wunused-variable]
+    weight_t min = std::numeric_limits<weight_t>::max();
+             ^
+unit_tests.cpp:294:19: note: in instantiation of function template specialization 'cs225::tools::min_weight_edge<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    ASSERT(tools::min_weight_edge(g) == 12);
+                  ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:29:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:294:19: note: in instantiation of function template specialization 'cs225::tools::min_weight_edge<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    ASSERT(tools::min_weight_edge(g) == 12);
+                  ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+unit_tests.cpp:360:19: note: in instantiation of function template specialization 'cs225::tools::shortest_path_length<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state> > >' requested here
+    ASSERT(tools::shortest_path_length(g, v1, v2) == 1);
+                  ^
+./proxy.h:297:9: note: expanded from macro 'ASSERT'
+                if (!(expr))                               \
+                      ^
+In file included from unit_tests.cpp:18:
+In file included from include/tools.h:126:
+include/tools.tcc:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+include/tools.tcc:40:26: note: in instantiation of function template specialization 'cs225::tools::minimum_spanning_tree<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    for (const auto& e : minimum_spanning_tree(g))
+                         ^
+unit_tests.cpp:434:12: note: in instantiation of function template specialization 'cs225::tools::mark_mst<cs225::graph<cs225::vertex_labels<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, cs225::edge_labels<cs225::tools::edge_state>, cs225::edge_weights<int> > >' requested here
+    tools::mark_mst(g);
+           ^
+8 warnings generated.
+
+
+Running tests...
+================================================================
+minWeight_OneEdge_ReturnValue . [10 pts] - FAILED
+minWeight_OneEdge_EdgeLabel . . [10 pts] - FAILED
+minWeight_MultiEdge_ReturnValue [11 pts] - FAILED
+minWeight_MultiEdge_EdgeLabels  [11 pts] - FAILED
+minPath_OneEdge_ReturnValue . . [10 pts] - FAILED
+minPath_OneEdge_EdgeLabel . . . [10 pts] - FAILED
+minPath_MultiEdge_ReturnValue . [11 pts] - FAILED
+minPath_MultiEdge_EdgeLabels  . [11 pts] - FAILED
+kruskal_all . . . . . . . . . . [16 pts] - FAILED
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

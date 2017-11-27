@@ -1,0 +1,27 @@
+Grading revision r6597 by boliu1, dated 2015-07-23 19:11:06.000601164 -0500 CDT
+Monad Autograder
+Testing lab_avl at 2015-07-23 23:13:07
+
+"Now let me erase this before you all copy it down." ~ Alexey Stepanov
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_oneElement  . . . [10 pts] - passed
+test_simpleRotateLeft  [10 pts] - passed
+test_simpleRotateRight [10 pts] - passed
+test_threeLeftRotates  [10 pts] - passed
+test_threeRightRotates [10 pts] - passed
+test_manyRotations . . [20 pts] - passed
+test_manyInserts . . . [20 pts] - passed
+test_valgrind (asan) . [10 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

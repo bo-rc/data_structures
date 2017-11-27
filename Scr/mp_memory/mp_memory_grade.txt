@@ -1,0 +1,8 @@
+Grading revision r2188 by boliu1, dated 2015-06-29 16:15:26.000282636 -0500 CDT
+Monad Autograder
+Testing mp_memory at 2015-06-29 23:14:04
+
+"A lot of the things that I say are true, but I don't actually mean them." ~ Alexey Stepanov
+
+Setting up test environment...
+Error: /dev/shm/cs225student/autograder/temp/mp_memory/include/collage.h does not exist.
